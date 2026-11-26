@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; form-action 'none'; base-uri 'none'; connect-src 'none'">
+  <meta name="color-scheme" content="light">
+  <title>Lake Forest · Kivitelezői ajánlatkérő</title>
+  <style>:root{font-family:"Aptos","Segoe UI",Arial,sans-serif;color:#203732;background:#f4f6f1;line-height:1.48;font-size:16px;--accent:#285845;--line:#d2dbd1;--muted:#52655b;--soft:#f2f6ef}
+*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #458b69;outline-offset:2px}button:disabled{opacity:.5;cursor:default}
+.wrap{width:min(1480px,96%);margin:auto}.mast{background:#1f4035;color:white}.bar{min-height:64px;display:flex;align-items:center;gap:1.3rem}.brand{font-family:Georgia,serif;font-size:1.45rem;font-weight:700;color:white;text-decoration:none;letter-spacing:-.04em}.purpose{font-size:.9rem;color:#d4e2d6}.mast nav{margin-left:auto;display:flex;gap:.45rem}.mast button{padding:.4rem .7rem;border:1px solid #688573;border-radius:6px;color:white;background:transparent;font-size:.88rem}
+main.wrap{padding-bottom:2rem}.intro{display:flex;align-items:end;justify-content:space-between;gap:2rem;padding:2.7rem .3rem 1.7rem}.intro h1{font-family:Georgia,serif;color:#1c382c;font-size:clamp(2.25rem,5vw,4.35rem);font-weight:500;line-height:1.04;letter-spacing:-.055em;margin:0}.intro p{margin:.75rem 0 0;max-width:51rem;color:var(--muted)}.intro-meta{display:grid;gap:.1rem;white-space:nowrap}.intro-meta span,.fine{font-size:.88rem;color:var(--muted)}
+h2,h3,p{margin:0}h2{font-size:clamp(1.3rem,2vw,1.55rem);letter-spacing:-.025em;line-height:1.24}h3{font-size:1rem}.block{padding:1.2rem 1.4rem 1.4rem;background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:1rem}.block>p,.block-intro p{margin-top:.4rem;max-width:85ch;color:var(--muted)}.company-grid,.terms{margin-top:1rem;display:grid;gap:1.1rem}.company-grid{grid-template-columns:1fr 2fr}.terms{grid-template-columns:repeat(3,minmax(0,1fr))}label{font-size:.93rem;font-weight:600}.company-grid input,.company-grid textarea,.field{margin-top:.35rem}input,textarea{color:#183b33;border:1px solid #9eafa2;background:#fbfdf9;border-radius:5px;padding:.5rem .65rem;width:100%;min-width:0;font-weight:400}textarea{resize:vertical}.field{display:flex;align-items:center;gap:.3rem;border:1px solid #9eafa2;background:#fbfdf9;border-radius:5px;padding:0 .55rem}.field input{border:0;background:transparent}.field span{font-weight:450;color:var(--muted);font-size:.87rem}.tools{display:flex;gap:1rem;align-items:center;justify-content:space-between;margin:1rem 0}.phases{display:flex;flex-wrap:wrap;gap:.35rem}.phases button,.plain{border:1px solid var(--line);color:var(--accent);background:white;border-radius:6px;padding:.45rem .7rem;font-size:.89rem;font-weight:600}.phases button[aria-pressed=true]{color:white;background:var(--accent);border-color:var(--accent)}.phase-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:1rem 0 .45rem}.phase-title h3{font-size:1.04rem}.small,.status{font-size:.82rem;color:var(--muted)}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.92rem}th{text-align:left;color:#415849;background:var(--soft);font-size:.81rem;font-weight:650;line-height:1.3}td,th{padding:.55rem .42rem;border-bottom:1px solid var(--line);vertical-align:middle}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.worktable{min-width:890px;table-layout:fixed}.worktable col:nth-child(1){width:27%}.worktable col:nth-child(2){width:10%}.worktable col:nth-child(3){width:12%}.worktable col:nth-child(4),.worktable col:nth-child(5){width:13%}.worktable col:nth-child(6){width:15%}.worktable col:nth-child(7){width:10%}.grid-input{width:100%;min-width:3rem;text-align:right;font-size:.95rem;padding:.44rem .35rem;font-variant-numeric:tabular-nums}.grid-input[aria-invalid=true],input[aria-invalid=true]{border-color:#ad4133;background:#fff4f1}.worktable details summary{cursor:pointer;font-weight:550}.worktable details p{color:var(--muted);font-size:.84rem;line-height:1.45;margin:.4rem 0 0}.quantity-basis{display:block;font-size:.78rem;color:var(--muted)}.status.done{color:#23583f;font-weight:600}.status.invalid,.message.alert{color:#8b3529}.status.open{color:#715a2b}.printval{display:none}.facade{min-width:710px;table-layout:fixed}.facade col:nth-child(1){width:38%}.facade col:nth-child(2),.facade col:nth-child(3){width:15%}.facade col:nth-child(4){width:16%}.facade col:nth-child(5){width:16%}#facades{margin:1rem 0 .8rem;overflow:auto}.facade label{display:flex;align-items:start;gap:.55rem}.facade label span{display:block}.facade label small{display:block;font-size:.81rem;font-weight:400;color:var(--muted);margin-top:.15rem}.facade input[type=radio]{width:1.15rem;height:1.15rem;accent-color:var(--accent);flex:0 0 1.15rem;margin:.15rem 0 0}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem}.summary-grid h3,.handoff h3{font-size:1.08rem}.summary-grid dl{margin:.4rem 0}.stat{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid var(--line)}.stat dd{font-weight:650;margin:0;font-variant-numeric:tabular-nums;text-align:right}.stat.strong{font-size:1.1rem;border-top:1px solid var(--accent);margin-top:.3rem}.stat small{display:block;font-size:.81rem;color:var(--muted)}.handoff{margin-top:1.4rem;border-top:1px solid var(--line);padding-top:1rem;display:flex;gap:1.4rem;align-items:center;justify-content:space-between}.handoff p{margin-top:.25rem;max-width:75ch;color:var(--muted)}.primary{background:var(--accent);color:white;border:0;border-radius:6px;white-space:nowrap;font-weight:650;padding:.7rem 1.2rem}.message{position:sticky;top:.5rem;z-index:2;background:#fbfdf9;border:1px solid var(--line);border-radius:7px;padding:.65rem .85rem;margin-bottom:.7rem}.message.alert{background:#fff3ef;border-color:#d8aa9f}.print-only,[hidden]{display:none!important}
+@media(max-width:850px){.intro{align-items:start}.wrap{width:95%}.tools{align-items:flex-start;flex-direction:column}.purpose{display:none}.company-grid,.terms,.summary-grid{grid-template-columns:1fr}.summary-grid{gap:.75rem}.intro-meta{white-space:normal}.handoff{align-items:start}.block{padding:1rem}.tools .plain{align-self:start}}
+@media(max-width:650px){.intro{display:block;padding:1.85rem 0 1rem}.intro-meta{display:flex;align-items:baseline;gap:.4rem;margin-top:.75rem}.mast nav{gap:.25rem}.mast button{padding:.4rem;font-size:.8rem}.bar{gap:.4rem;min-height:54px}.brand{font-size:1.2rem}.table-wrap,#facades{overflow:visible}.worktable,.facade{min-width:0;display:block}.worktable colgroup,.facade colgroup,.worktable thead,.facade thead{display:none}.worktable tbody,.facade tbody{display:grid;gap:.7rem}.worktable tr,.facade tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem .6rem;border:1px solid var(--line);border-radius:7px;padding:.55rem .65rem}.worktable td,.facade td{display:block;padding:0;border:0;text-align:left}.worktable td:first-child,.facade td:first-child{grid-column:1/-1}.worktable td[data-label]::before,.facade td[data-label]::before{display:block;content:attr(data-label);font-size:.77rem;color:var(--muted);margin-bottom:.15rem}.quantity-basis{display:inline;margin-left:.25rem}.worktable input,.facade input{width:100%}.worktable td.num,.facade td.num{text-align:left}.handoff{display:grid}.primary{justify-self:start}.tools .plain{font-size:.85rem}.phase-title{align-items:start}}
+@page{size:A4 landscape;margin:12mm}
+@media print{
+  :root,body{background:white;color:black;font:10pt/1.35 Arial,sans-serif}.wrap{width:100%}.mast{background:white;color:black;border-bottom:1px solid #555}.brand,.purpose{color:black}.mast nav,.tools,.primary,.message,.fine#autosave,.handoff,#clear-facade,.status,.facade input[type=radio]{display:none!important}.intro{padding:.6rem 0}.intro h1{font-size:22pt}.intro p,.block-intro p{display:none}.block{border:0;border-radius:0;padding:.4rem 0;margin:0 0 .7rem}.company-grid,.summary-grid{grid-template-columns:1fr 1fr}.terms{grid-template-columns:repeat(3,1fr)}.phase-section[hidden]{display:block!important}.table-wrap,#facades{overflow:visible}.worktable,.facade{display:table;min-width:0;table-layout:fixed}.worktable thead,.facade thead{display:table-header-group}.worktable tbody,.facade tbody{display:table-row-group}.worktable tr,.facade tr{display:table-row;border:0;break-inside:avoid}.worktable td,.facade td{display:table-cell;border-bottom:1px solid #ccc}.worktable td::before,.facade td::before{display:none!important}.worktable colgroup,.facade colgroup{display:table-column-group}.worktable th,.facade th,.worktable td,.facade td{padding:3px 4px;font-size:9pt}.worktable details:not([open]) p{display:none}.printval{display:block;font-size:9pt;font-variant-numeric:tabular-nums}.grid-input{display:none}.facade tr.is-base .fac-label::after{content:" · választott alapváltozat";font-weight:bold}.facade label small{font-size:8pt}.phase-title,.worktable th,.facade th,.summary-grid h3,.block h2{break-after:avoid}.summary-grid,.terms,.company{break-inside:avoid}.company label>.printval{white-space:pre-wrap;font-weight:400}.company input,.company textarea,.field{display:none}.terms label>.printval{font-weight:400}.bar{min-height:24px}.facade small{display:none!important}
+}
+
+select{font:inherit;color:#183b33;background:#fbfdf9;border:1px solid #9eafa2;border-radius:5px;padding:.46rem .42rem;max-width:100%}
+select:focus-visible{outline:3px solid #458b69;outline-offset:2px}.worktable .status{display:block;margin-top:.2rem}.worktable select{width:100%;font-size:.82rem}.worktable col:nth-child(1){width:25%}.worktable col:nth-child(6){width:13%}.worktable col:nth-child(7){width:14%}.line-comment{display:block;margin-top:.5rem;color:var(--muted);font-size:.83rem}.line-comment textarea{display:block;width:100%;margin-top:.1rem;font-size:.87rem}.printed-comment{display:none}
+.company-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.company-grid label,.terms label{display:flex;flex-direction:column;align-items:stretch}.company-grid .wide{grid-column:1/-1}.commercial-panel{margin-top:1.1rem;border-top:1px solid var(--line);padding-top:.8rem}.commercial-panel summary{cursor:pointer;font-weight:650}.term-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.25rem;margin:1rem 0}.term-list label{display:flex;justify-content:space-between;align-items:center;gap:.75rem;font-size:.89rem;border-top:1px solid var(--line);padding:.55rem 0}.term-list select{flex:0 0 8.5rem;font-size:.88rem}.company-grid textarea{width:100%}.terms{align-items:end}.terms label{align-self:stretch;justify-content:space-between}
+@media(max-width:900px){.term-list{grid-template-columns:1fr}.company-grid{grid-template-columns:1fr}}
+@media print{.term-list label,.company-grid label,.terms label{break-inside:avoid}select,.line-comment,#contract-heading ~ .company-grid textarea{display:none!important}.term-list{grid-template-columns:1fr 1fr}.term-list .printval{font-weight:400}.printed-comment:not(:empty){display:block;margin-top:3px;font-size:8pt;white-space:pre-wrap}.company-grid,.commercial-panel[open]>.company-grid{grid-template-columns:1fr 1fr}.company-grid .printval{white-space:pre-wrap;font-weight:400}.company{break-inside:auto}.commercial-panel>summary{list-style:none}.terms{align-items:start}.worktable .status{display:none}.company-grid .wide{grid-column:1/-1}}
+.rounds{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.2rem;margin:0 0 1rem}.rounds .phases button{font-size:.95rem;padding:.55rem .95rem}#round-help{margin:0;color:var(--muted);font-size:.9rem;max-width:72ch}
+body[data-round="1"] .r2{display:none!important}
+.pkgs{min-width:760px}.pkgs td:first-child{width:44%}.pkgs strong{display:block;font-weight:650}.pkg-note{display:block;color:var(--muted);font-size:.84rem;line-height:1.42;margin-top:.15rem}.pkgs td:nth-child(2){width:17%}.pkgs td:nth-child(3){width:13%}.pkgs select,.risks select{width:100%;font-size:.88rem}.pkgs td.up{color:#8b3529}.pkgs td.down{color:#23583f}
+.risks{min-width:760px;table-layout:fixed}.risks col:nth-child(1){width:15%}.risks col:nth-child(2){width:40%}.risks col:nth-child(3){width:27%}.risks col:nth-child(4){width:18%}.risks input[type=text]:not(.grid-input){padding:.44rem .5rem;font-size:.9rem}#add-risk{margin-top:.8rem}
+.stat dd.minus{color:#23583f}.stat dd.plus{color:#8b3529}
+@media(max-width:650px){.rounds{align-items:flex-start;flex-direction:column}.pkgs,.risks{min-width:0;display:block}.pkgs colgroup,.risks colgroup,.pkgs thead,.risks thead{display:none}.pkgs tbody,.risks tbody{display:grid;gap:.7rem}.pkgs tr,.risks tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem .6rem;border:1px solid var(--line);border-radius:7px;padding:.55rem .65rem}.pkgs td,.risks td{display:block;width:auto!important;padding:0;border:0;text-align:left}.pkgs td:first-child{grid-column:1/-1}.risks td:nth-child(1){grid-row:1;grid-column:1}.risks td:nth-child(4){grid-row:1;grid-column:2}.risks td:nth-child(2),.risks td:nth-child(3){grid-column:1/-1}.pkgs td[data-label]::before,.risks td[data-label]::before{display:block;content:attr(data-label);font-size:.77rem;color:var(--muted);margin-bottom:.15rem}.pkgs input,.risks input{width:100%}.pkgs td.num,.risks td.num{text-align:left}}
+@media print{.rounds,#add-risk{display:none!important}.pkgs,.risks{min-width:0}.pkgs input,.risks input{display:none!important}.pkgs td,.risks td,.pkgs th,.risks th{padding:3px 4px;font-size:9pt}.pkgs tr,.risks tr{break-inside:avoid}}
+.stat dd{white-space:nowrap}
+body[data-round="2"] .r1only{display:none!important}#scope-toggle{margin-top:.9rem}#scope-body{margin-top:.4rem}
+body[data-round="1"] .worktable{min-width:0;table-layout:auto}body[data-round="1"] .worktable colgroup{display:none}body[data-round="1"] .worktable th:nth-child(2){width:15%}body[data-round="1"] .worktable th:nth-child(7){width:24%}
+.model{display:grid;grid-template-columns:minmax(0,24rem) minmax(0,1fr);gap:.5rem 1.4rem;align-items:start;margin:1rem 0 .9rem;padding:.9rem 1rem;background:var(--soft);border:1px solid var(--line);border-radius:9px}.model label{display:flex;flex-direction:column;font-size:.93rem}.model select{margin-top:.35rem;width:100%;font-size:.95rem}#model-help{margin:0;color:var(--muted);font-size:.89rem;line-height:1.45}
+body[data-model="lumpSum"] .m-fix,body[data-model="lumpSum"] .m-pct,body[data-model="percent"] .m-fix{display:none!important}body:not([data-model="percent"]) .m-pct{display:none!important}
+@media(max-width:850px){.model{grid-template-columns:1fr}}
+@media print{.model select{display:none!important}}
+.proposals{min-width:860px;table-layout:fixed}.proposals col:nth-child(1){width:14%}.proposals col:nth-child(2){width:31%}.proposals col:nth-child(3){width:25%}.proposals col:nth-child(4){width:14%}.proposals col:nth-child(5){width:16%}.proposals select{width:100%;font-size:.88rem}.proposals input[type=text]:not(.grid-input){padding:.44rem .5rem;font-size:.9rem}#add-proposal{margin-top:.8rem}
+@media(max-width:650px){.proposals{min-width:0;display:block}.proposals colgroup,.proposals thead{display:none}.proposals tbody{display:grid;gap:.7rem}.proposals tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem .6rem;border:1px solid var(--line);border-radius:7px;padding:.55rem .65rem}.proposals td{display:block;width:auto!important;padding:0;border:0;text-align:left}.proposals td:nth-child(2),.proposals td:nth-child(3){grid-column:1/-1}.proposals td[data-label]::before{display:block;content:attr(data-label);font-size:.77rem;color:var(--muted);margin-bottom:.15rem}.proposals input{width:100%}.proposals td.num{text-align:left}}
+@media print{#add-proposal{display:none!important}.proposals{min-width:0}.proposals input{display:none!important}.proposals td,.proposals th{padding:3px 4px;font-size:9pt}}
+</style>
+</head>
+<body data-round="1">
+  <header class="mast"><div class="wrap bar">
+    <a class="brand" href="#top">Lake Forest</a>
+    <span class="purpose">Mogyoród · Családi ház befejezése</span>
+    <nav aria-label="Fájlműveletek">
+      <button type="button" id="restore">Piszkozat megnyitása</button><input hidden type="file" id="file" accept=".json,application/json">
+      <button type="button" id="print">Nyomtatás</button>
+    </nav>
+  </div></header>
+  <main class="wrap" id="top">
+    <section class="intro">
+      <div><h1>Kivitelezői ajánlatkérő</h1>
+      <p>Az első körben elég a négy csomagár, a homlokzati változatok és a feltételek; a tételes kiírás már most megnézhető, ez a csomagárak alapja. Tételes árat a második körben, a kiválasztott ajánlattevőktől kérünk; az lesz a szerződés melléklete. A lap forintban számol, a hiányzó adatokat üresen hagyhatja.</p></div>
+      <div class="intro-meta"><span>Kiírás változata</span><strong id="version"></strong></div>
+    </section>
+    <div class="rounds">
+      <div id="round-nav" class="phases" role="group" aria-label="Ajánlati kör">
+        <button type="button" data-round="1" aria-pressed="true">1. kör · csomagárak</button>
+        <button type="button" data-round="2" aria-pressed="false">2. kör · tételes bontás</button>
+      </div>
+      <p id="round-help"></p>
+    </div>
+    <div id="message" class="message" role="status" hidden></div>
+    <section class="block company" aria-labelledby="company-heading">
+      <h2 id="company-heading">Ajánlattevő</h2>
+      <p>A kért alapkonstrukció: az anyag és a szakvállalkozói munka számla szerinti áron, a kedvezmények és visszatérítések átadásával, mellé fix generáldíj. Más konstrukcióban is ajánlhat, lent kiválaszthatja.</p>
+      <div class="company-grid">
+        <label>Cégnév vagy vállalkozó neve<input id="company" type="text" maxlength="160" placeholder="Az ajánlattevő neve" aria-required="true" autocomplete="organization"></label>
+        <label>Kapcsolattartó és elérhetősége<input id="contact" type="text" maxlength="10000" placeholder="Név, telefon vagy e-mail"></label>
+        <label>Ajánlat kelte<input id="date" type="text" maxlength="10000" placeholder="Év-hó-nap"></label>
+        <label>Ajánlat érvényes eddig<input id="validUntil" type="text" maxlength="10000" placeholder="Dátum vagy érvényességi idő"></label>
+      </div>
+      <details class="commercial-panel" open>
+        <summary>Kezdés, fizetés és jótállás</summary>
+        <div class="company-grid">
+          <label>Lehetséges kezdés<input id="start" type="text" maxlength="10000" placeholder="Dátum vagy feltétel"></label>
+          <label>Kivitelezési idő<input id="duration" type="text" maxlength="10000" placeholder="Hetek vagy hónapok, ütemenként"></label>
+          <label>Előleg<span class="field"><input id="advancePct" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>%</span></span></label>
+          <label>Vállalt jótállás<input id="warranty" type="text" maxlength="10000" placeholder="Időtartam és érintett munkák"></label>
+          <label class="wide">Fizetési ütemezés<textarea id="payment" rows="2" maxlength="10000" placeholder="Mérföldkövek, teljesítésigazolás, esedékesség"></textarea></label>
+        </div>
+      </details>
+    </section>
+    <section class="block" aria-labelledby="pkg-heading">
+      <h2 id="pkg-heading">Konstrukció és csomagárak</h2>
+      <div class="model">
+        <label>Milyen konstrukcióban ajánl?<select id="model"><option value="">Válasszon</option><option value="openBook">Fix generáldíj + nyílt könyv</option><option value="lumpSum">Átalányár, a díj benne van</option><option value="percent">Százalékos díj a költségre</option><option value="mixed">Vegyes vagy más konstrukció</option></select></label>
+        <p id="model-help"></p>
+      </div>
+      <p>Csomagonként egy nettó ár, anyag és munka együtt, <span id="fee-note">generáldíj nélkül: a díjat lent egyszer adja meg</span>. A csomagár a csomag teljes munkáját tartalmazza, ahogy a lenti tételes kiírás leírja; kivétel csak az, amit ott Kizárom jelöléssel, a kizárásoknál vagy a kockázati tételeknél felsorol. Jelölje, melyik ár fix és melyik csak irányár.</p>
+      <div class="table-wrap" id="packages"></div>
+    </section>
+    <section class="block lines" id="scope-block" aria-labelledby="scope-heading">
+      <div class="block-intro"><div><h2 id="scope-heading">Tételes kiírás: a csomagárak alapja</h2>
+        <p id="scope-intro"></p>
+        <button type="button" class="plain r1only" id="scope-toggle" aria-controls="scope-body" aria-expanded="false">Tételes kiírás megnyitása</button>
+      </div></div>
+      <div id="scope-body">
+        <div class="tools"><div id="phase-nav" class="phases" aria-label="Munkacsomagok"></div>
+        <button id="fill-plan" class="plain r2" type="button">Tervmennyiségek átvétele</button></div>
+        <div id="worktables"></div>
+      </div>
+    </section>
+    <section class="block" aria-labelledby="facade-heading">
+      <h2 id="facade-heading">Homlokzati változatok</h2>
+      <p>Körbeburkolt főfalakat szeretnénk. A lakhatásig kért alapváltozat szálcement (EQUITONE vagy egyenértékű). Jelölje meg, melyik rendszert tartalmazza ténylegesen a lakhatásig adott ára (csomagár vagy tételes ár). A vállalható változatokhoz adjon komplett nettó egységárat, vagyis állvánnyal, lábazattal, kávákkal, párkányokkal és csomópontokkal együtt, ugyanarra a <strong id="area"></strong> referenciafelületre. A többi változatot hagyja üresen. A változatok itt látható összegei külön ajánlati adatok, a végösszeget nem növelik.</p>
+      <p>Az ajánlati megjegyzésben változatonként írja le a rétegrendet és a rétegvastagságokat. Ha valamelyik részt mégsem tartalmazza az egységár, nevezze meg, és adja meg a költségét.</p>
+      <div id="facades"></div>
+      <button class="plain" id="clear-facade" type="button">Választás törlése</button>
+    </section>
+    <section class="block" aria-labelledby="terms-heading">
+      <h2 id="terms-heading">Díj, árplafon és adózás</h2>
+      <div class="terms">
+        <label class="m-pct">Százalékos díj a tényleges költségre<span class="field"><input id="feePct" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>%</span></span></label>
+        <label class="m-fix">Fix generáldíj a teljes munkára (A–C), nettó<span class="field"><input id="feeFt" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>Ft</span></span></label>
+        <label class="m-fix">Fix generáldíj, ha csak a lakhatásig tartó ütemet (A) rendelik meg, nettó<span class="field"><input id="phaseAFeeFt" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>Ft</span></span></label>
+        <label>27%-os áfájú rész a nettó összegből (például garázs, kert és kerítés)<span class="field"><input id="standardSharePct" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>%</span></span></label>
+        <label>Bruttó árplafon a teljes munkára (A–C)<span class="field"><input id="capGrossFt" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>Ft</span></span></label>
+        <label>Bruttó árplafon, ha csak az A ütemet rendelik meg<span class="field"><input id="capAGrossFt" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>Ft</span></span></label>
+        <label>Bruttó árplafon, ha a kert és kerítés (K) is megrendelik<span class="field"><input id="capAllGrossFt" type="text" inputmode="decimal" autocomplete="off" placeholder="—"><span>Ft</span></span></label>
+      </div>
+      <p class="fine">Az árplafon azt jelenti, hogy a megjelölt tervek és a kiírt munkák teljesítéséért generáldíjjal és áfával együtt legfeljebb ennyit számláz. Ezen felül csak a megrendelő által előre, írásban jóváhagyott változtatás és a felsorolt kockázati tételek számlázhatók, legfeljebb a megadott összegig. Tartalékot nem kérünk, azt a megrendelő kezeli. A végösszegben egyszer, a teljes munkára megadott díj szerepel; átalányárnál a díj a csomagárakban van. Teljes 27%-os áfánál a hányad 100%, vegyes áfánál a fennmaradó hányadra 5% jut. Tisztázatlan besorolásnál hagyja üresen.</p>
+    </section>
+    <section class="block" aria-labelledby="risk-heading">
+      <h2 id="risk-heading">Kockázati tételek</h2>
+      <p>Ami a bejáráson vagy a tervekből látható, annak a javítása az árban van. Ide csak az kerül, ami bontás vagy feltárás nélkül nem látható: milyen munka, mi váltja ki, hogyan számol el, és legfeljebb mennyi lehet a többletköltség. Például a tetőszigetelés cseréje, ha a bontáskor beázás nyoma látszik. Ami sem itt, sem a kizárások között nem szerepel, annak kockázatát az ár tartalmazza. Felső határ nélküli tételnél a legrosszabb eset nem számolható.</p>
+      <div class="table-wrap" id="risks"></div>
+      <button class="plain" id="add-risk" type="button">Új sor</button>
+    </section>
+    <section class="block" aria-labelledby="ve-heading">
+      <h2 id="ve-heading">Javaslatok: értékesebb vagy olcsóbb megoldások</h2>
+      <p>Az ár a kiírt műszaki tartalomra szóljon. Ha lát olyat, amit ugyanolyan minőségben olcsóbban meg lehet oldani, olyat, ami feleslegesen drága, vagy olyan prémium megoldást, ami kevés felárral sokat hozzátesz a ház értékéhez, itt külön írja meg, a nettó különbözettel. Ezekről a megrendelő dönt, az alapárban nincsenek benne. Ahol a megoldás rejtve marad (szigetelés, vízszigetelés, gépészet, szerelvények, sarokszelepek), ott a minőség nem csökkenhet; ahol látszik, ott szívesen fogadunk ugyanolyan hatású, olcsóbb megoldást.</p>
+      <div class="table-wrap" id="proposals"></div>
+      <button class="plain" id="add-proposal" type="button">Új sor</button>
+    </section>
+    <section class="block" aria-labelledby="contract-heading">
+      <h2 id="contract-heading">Szerződéses feltételek</h2>
+      <p>Jelölje, mely feltételeket vállalja. Egy nyitott kérdést üresen hagyhat. Részleges vállalásnál az ajánlati megjegyzésben írja le a saját feltételeit.</p>
+      <div id="contract-terms" class="term-list"></div>
+      <div class="company-grid">
+        <label>Kizárások és más által végzett munkák, zárt lista<textarea id="exclusions" rows="3" maxlength="10000" placeholder="Tétel, felelős és a szükséges egyeztetés. Ami itt nem szerepel, azt az ár tartalmazza."></textarea></label>
+        <label>Külön rendelhető opciók és nettó áruk<textarea id="extras" rows="3" maxlength="10000" placeholder="Megnevezés, mennyiség és nettó összeg"></textarea></label>
+        <label class="wide">Ajánlati megjegyzés<textarea id="notes" rows="3" maxlength="10000" placeholder="Áfabesorolás indokai, az árplafon tartalma, a két kör közti eltérés oka és eltérések a kért feltételektől"></textarea></label>
+      </div>
+    </section>
+    <section class="block final" aria-labelledby="sum-heading">
+      <h2 id="sum-heading">Ajánlati összesítő</h2>
+      <div class="summary-grid"><div><h3 id="phase-heading">Csomagárak</h3><dl id="phase-total"></dl></div><div><h3>Teljes vállalás</h3><dl id="total"></dl></div></div>
+      <div class="handoff"><div><h3>Ajánlat beadása</h3><p>A gomb letölti az ajánlatot JSON-fájlként. Küldje vissza a fájlt a megrendelőnek a szokásos csatornán. Részlegesen kitöltött ajánlat is letölthető és később újranyitható. A második körben ugyanezt a fájlt nyissa meg a „Piszkozat megnyitása” gombbal, így az első körös adatok megmaradnak.</p></div>
+        <button type="button" class="primary" id="export">Ajánlat beadása</button></div>
+      <p id="autosave" class="fine" role="status"></p>
+    </section>
+  </main>
+  <script type="application/json" id="scope">{"version":"LF-2026-11-25-v4","rows":[{"id":"r01-01","group":"r01","phase":"A","label":"Állapotfelmérés és ellenőrző felmérési rajzok","unit":"csomag","qty":1,"note":"A meglévő szerkezet, üvegfalak, tetők és lefolyók felmérése, szintenkénti kész padló- és mennyezetmagasság. A fizikai feltárások az r03 csoportba tartoznak.","basis":"kiírási"},{"id":"r01-02","group":"r01","phase":"A","label":"Kiviteli tervek összehangolása és hiánypótlása","unit":"csomag","qty":1,"note":"Csak a meglévő tervek összehangolása, hiánypótlása és a kivitelezői műhelyrajzok. A belsőépítészeti kiviteli terv (burkolás, álmennyezet, világítás) és a villamos kiviteli terv a megrendelő külön megbízása, azokat itt nem kell árazni. A már rendelkezésre álló REV_04-1 és REV2 felhasználandó. A módosítandó rajzokat tételesen meg kell nevezni.","basis":"kiírási"},{"id":"r01-03","group":"r01","phase":"A","label":"Megvalósulási dokumentáció és átadási iratok","unit":"csomag","qty":1,"note":"Építészeti és szakági változások átvezetése, kivitelezői nyilatkozatok, műbizonylatok, kezelési dokumentáció és használatbavételi iratok összeállítása. A szakági vizsgálatok a saját munkanemükben szerepelnek. A felelős műszaki vezetés és az e-napló vezetése a generálkivitelező feladata, a díja az árban van. Az építtetőváltást és az energetikai tanúsítványt a megrendelő intézi. A szükséges hatósági nyilatkozatok és az A ütem használatának feltételei egyeztetendők.","basis":"kiírási"},{"id":"r02-01","group":"r02","phase":"A","label":"Független műszaki ellenőr helyszíni ellenőrzése","unit":"alkalom","qty":null,"note":"Építtetői közvetlen megbízás. A generál a saját vállalásán kívül jelölje. Az ellenőrzési alkalmak száma a tényleges ütemezés és az eltakarások alapján egyeztetendő.","basis":"felmérendő","defaultStatus":"byOwner"},{"id":"r03-01","group":"r03","phase":"A","label":"Felvonulás és meglévő szerkezetek védelme","unit":"csomag","qty":1,"note":"Ideiglenes ellátás, munkahelyi védelem, üvegezés és nyílászárók megóvása, munkaterület takarítása, levonulás. A homlokzati állvány az r05-ben szerepel. Az A csomag átadásakor használaton kívül maradó teraszok lezárásáról, ideiglenes leesés elleni védelemről és a biztonságos megközelítésről gondoskodni kell.","basis":"kiírási"},{"id":"r03-02","group":"r03","phase":"A","label":"Feltárások és a megmaradó szerkezetek helyi javítása","unit":"hely","qty":null,"note":"Tető, mellvéd, küszöb, lábazat és áttörés vizsgálati helyei. Előzetes felmérés után a megbontás és visszazárás mennyiségét meg kell adni. Teljes tetőréteg pótlása az r04-ben.","basis":"felmérendő"},{"id":"r03-03","group":"r03","phase":"A","label":"Építési törmelék rakodása, elszállítása és lerakása","unit":"m³","qty":48,"note":"A régi építészeti kiírásban szereplő laza térfogat. A helyszíni és bontási felméréssel ellenőrizendő. A kitermelt tiszta föld külön kezelendő.","basis":"kiírási"},{"id":"r03-04","group":"r03","phase":"A","label":"Falazott beltéri válaszfalak, 10 cm","unit":"m²","qty":90.32,"note":"Régi építészeti kiírás szerinti mészhomoktégla-válaszfal. A megmaradó falak levonandók. A kartonfalak az r16 alatt.","basis":"tervi"},{"id":"r03-05","group":"r03","phase":"A","label":"Válaszfalak előregyártott áthidalói","unit":"db","qty":8,"note":"Régi építészeti kiírás, 130 cm hosszú, 10 cm széles elemek. Csak a megépítendő nyílásokra számolható.","basis":"tervi"},{"id":"r03-06","group":"r03","phase":"A","label":"Tervezett konyhai főfalkiváltás","unit":"nyílás","qty":1,"note":"Az S-2M és S-3 statikai tervben szereplő két pillér és acélgerenda, ideiglenes megtámasztás, bontás, korrózió- és tűzvédelem, majd helyreállítás. Az elvégzett munkát felméréssel kell levonni.","basis":"kiírási"},{"id":"r04-01","group":"r04","phase":"A","label":"Lapostető csapadékvíz elleni szigetelése","unit":"m²","qty":306.13,"note":"A későbbi kiírás 230 m² zárófödém-vetületet jelöl, a régi 306,13 m²-es vízszigetelési tétel konzolokat és kapcsolódó tetőrészeket is. Egyetlen felmérési rajzról kell igazolni a kiterített, ténylegesen pótlandó szigetelést, elválasztó és védőréteggel.","basis":"tervi"},{"id":"r04-02","group":"r04","phase":"A","label":"Emeleti terasz csapadékvíz elleni szigetelése","unit":"m²","qty":203.44,"note":"Felhajtásokkal számított régi tervmennyiség. Nem azonos a kész járófelülettel. Küszöb- és mellvédcsatlakozás beletartozik, járófelület az r21-ben. Az újabb kb. 160 m² teraszvetület ugyanennek a szerkezetnek síkban mért kontrollja, a 203,44 m²-re nem adható rá.","basis":"tervi"},{"id":"r04-03","group":"r04","phase":"A","label":"Födém párazáró rétege","unit":"m²","qty":222,"note":"Régi tetőrétegrend szerint. A megmaradó párazárás folytonosságát igazolni kell. Tartalmazza a toldásokat és áttörések párazáró csatlakoztatását.","basis":"tervi"},{"id":"r04-04","group":"r04","phase":"A","label":"Tető hőszigetelése a lakótér felett","unit":"m²","qty":152.87,"note":"Régi kiírás szerint többrétegű táblás szigetelés, lejtésképzéssel. A megadott vetület egyszer számolandó, nem rétegenként. A teraszrétegrend külön tétel.","basis":"tervi"},{"id":"r04-05","group":"r04","phase":"A","label":"Tető lejtésadó szigetelése a teraszok felett","unit":"m²","qty":85.95,"note":"Régi tetőkiírás vetülete. Az eltérő vastagságú alap-, kiegészítő és lejtésadó rétegeket csomópontonként kell egyeztetni az előző tétellel.","basis":"tervi"},{"id":"r04-06","group":"r04","phase":"A","label":"Emeleti terasz hőszigetelése és lejtésképzése","unit":"m²","qty":157.9,"note":"Régi kiírás, ezen belül 59,46 m²-en alap hőszigetelő táblát is jelöl. Hőhídmentes küszöb- és mellvédcsatlakozással; a 59,46 m² nem további vetület.","basis":"tervi"},{"id":"r04-07","group":"r04","phase":"A","label":"Rejtett eresz szigetelése és csatlakozásai","unit":"fm","qty":54.45,"note":"Régi részletterv szerint 70 cm kiterített szélesség. Szigetelés, hordozó és hegesztett csatlakozás. Az összefolyók külön sorban.","basis":"tervi"},{"id":"r04-08","group":"r04","phase":"A","label":"Tető- és teraszélek vízorra és cseppentője","unit":"fm","qty":126.44,"note":"Fóliabádog vagy az adott szigeteléssel igazoltan kompatibilis élképzés. Az r06 mellvédfedés burkolati élét el kell határolni. A későbbi kiírás kb. 110 fm attikát jelöl. Csak a vízorrtól elkülönülő fedőbádog kerülhet a külön attikatételbe.","basis":"tervi"},{"id":"r04-09","group":"r04","phase":"A","label":"Tető- és teraszösszefolyók","unit":"db","qty":16,"note":"6 db tető- és 10 db teraszösszefolyó a régi vízelvezetési kiírásban. Lombkosár, szigetelő gallér, ellenőrizhető csatlakozás és vízpróba.","basis":"tervi"},{"id":"r04-10","group":"r04","phase":"A","label":"Homlokzati sík alatti csapadékvíz-levezetés","unit":"fm","qty":64,"note":"Régi vízelvezetési kiírás. Bekötésekkel, rögzítéssel és szükséges szigeteléssel a talajszinti csatlakozásig. A telken belüli elvezetés az r23-ban.","basis":"tervi"},{"id":"r04-11","group":"r04","phase":"A","label":"Garázson belüli csapadékvezeték-elhúzás","unit":"fm","qty":15,"note":"Régi építészeti kiírás szerint hőszigetelt belső szakasz. A homlokzati 64 fm-től elkülönített szakasz.","basis":"tervi"},{"id":"r04-12","group":"r04","phase":"A","label":"Kavics leterhelő- és védőréteg a lapostetőn","unit":"m³","qty":13.03,"note":"Régi kiírás 4 cm leterheléssel. A járható tetőterasz által kiváltott vagy már meglévő részek levonandók.","basis":"tervi"},{"id":"r04-13","group":"r04","phase":"A","label":"Attikafalak önálló fedőbádogozása","unit":"fm","qty":null,"note":"Az újabb kimutatás kb. 110 fm-t jelöl. Az r04-08 vízorral és a burkolt r06 mellvédfedéssel közös szakaszok levonásával, csomópontonként felmérendő.","basis":"felmérendő"},{"id":"r04-14","group":"r04","phase":"A","label":"Rejtett eresz fűtőkábele és működési próbája","unit":"fm","qty":54,"note":"Újabb kiírás szerinti közelítő hossz. Csak fűtőkábel, rögzítés, érzékelő és helyi vezérlés; az eresz szigetelése az r04-07-ben, betáp az r13-ban.","basis":"kiírási"},{"id":"r05-01","group":"r05","phase":"A","label":"Fő homlokzati falfelületek, választott külső burkolatrendszer","unit":"m²","qty":124.31,"note":"Négy homlokzat a régi felületjegyzék szerint. Közel teljes burkolat, a kiválasztott alapváltozat rendszerárával. Falelőkészítés, méretezett hőszigetelés, rögzítés vagy tartóváz, burkolat, lezárások és kávák. Állvány külön sor. Az újabb kimutatás a teljes főfali rendszerre 290 m²-t használ; a két régi falfelület (együtt 206,88 m²) és a 290 m² nem adható össze. Kért alapváltozat az átszellőztetett szálcement. Eltérő vállalásnál nevezze meg az itt beárazott rendszert. A teraszmellvédek külső oldala és a konzolok homloksávja is a homlokzati rendszer része, az A csomagban. A rétegrend vastagsága igazodjon az árnyékolók tokjaihoz (lásd r22).","basis":"tervi"},{"id":"r05-02","group":"r05","phase":"A","label":"Korábban nagytáblásnak jelölt főfali sáv, választott rendszer","unit":"m²","qty":82.57,"note":"A három eredeti szerkezeti változat közös felülete, egyetlen kivitel árazandó. A 124,31 m²-hez való csatlakozást helyszíni felülettérképpel kell igazolni. A 290 m²-es összehasonlító referencia nem további munkamennyiség. A káva/párkány későbbi iránymennyisége kb. 120 fm és 60 fm; a r05-főfalak egységára tartalmazza az odatartozó csatlakozásokat.","basis":"tervi"},{"id":"r05-03","group":"r05","phase":"A","label":"Homlokzati állványozás és bontás","unit":"m²","qty":529.2,"note":"A régi kiírás építési állványfelülete, külön a nettó burkolandó falfelülettől. A r05-főfalak árain kívül, az egész munkára egy alkalommal számolandó. Eltérő bérleti időt az ajánlatban meg kell adni.","basis":"tervi"},{"id":"r05-04","group":"r05","phase":"A","label":"Főfali lábazat rendszerének eltérő kialakítása","unit":"m²","qty":null,"note":"A régi kiírás 80 m² lábazati hőszigetelést jelöl. A főfali sorokkal közös vetületre csak az eltérő vízálló kivitel többlete, további vetületre teljes rendszer adható meg. Bitumenes fogadófelület és csatlakozás ellenőrzendő. Későbbi burkolati többletsáv kb. 40 m²; a 80 m² a szigetelésre, nem a többletburkolat megrendelt mennyiségére vonatkozik.","basis":"felmérendő"},{"id":"r06-01","group":"r06","phase":"B","label":"Teraszmellvédek függőleges burkolata","unit":"m²","qty":120.8,"note":"A régi terv szerinti függőleges felület, rendszerhez szükséges burkolati fogadófelülettel és csomópontokkal. A tető vízszigetelése és a korlát külön. Újabb kimutatás a mellvédek belső oldalára és fedésére együtt kb. 140 m²-t, az emeleti mellvédre 83 fm-t jelöl. A 120,80 m²-rel nem adható össze. Ha a B csomag később készül, a mellvéd külső, homlokzati oldala a homlokzattal együtt az A csomagban készüljön; az ajánlatban jelölje, melyik oldal melyik csomagba került.","basis":"tervi"},{"id":"r06-02","group":"r06","phase":"A","label":"Teraszmellvédek vízszintes fedése","unit":"m²","qty":24.29,"note":"Mellvédfedés lejtéssel, dilatációval és vízorral. Az A csomagban készül, mert ez zárja le a vízszigetelés felhajtását, és a 30 cm-es emeleti üvegkorlát a mellvéd tetejére kerül. Az r04 szerkezeti szigetelését és bádogos élét itt ismételten nem kell számolni.","basis":"tervi"},{"id":"r07-01","group":"r07","phase":"A","label":"Konzolaljak és kültéri mennyezetek kész felülete","unit":"m²","qty":147.72,"note":"Régi kiírás 99,42 m² az emelet feletti és 48,30 m² a földszint feletti terasz mennyezetén. Fej fölötti alkalmazásra megfelelő rendszer; egyszer szerepel, a régi 147,70 m² vakolt alsó sík helyén. A teljes terv hőkezelt borovi lambériát és LED-profilt jelöl; a villamos tartozékokat az r14-ben kell szerepeltetni.","basis":"tervi"},{"id":"r08-01","group":"r08","phase":"A","label":"Emeleti konzol különálló homloksávjának burkolata","unit":"m²","qty":null,"note":"A régi részletjegyzék bruttó referenciája 52,70 m². Kizárólag az r06/r07 tételekkel nem fedett, rajzon azonosított nettó sáv árazható; teljes átfedésnél a tényleges mennyiség nulla.","basis":"felmérendő"},{"id":"r09-01","group":"r09","phase":"A","label":"Levegő–víz hőszivattyú, telepítéssel","unit":"db","qty":1,"note":"REV2 alapváltozat 23 kW-os gép; a másik szakági változat 16 kW-os. Egy, hőveszteség- és hűtési méretezéssel alátámasztott kivitel ajánlható meg. Kültéri és beltéri egység, rezgésvédelem, hűtőköri bekötés és gyártói indítás.","basis":"tervi"},{"id":"r09-02","group":"r09","phase":"A","label":"Használati melegvíz-tároló és cirkuláció","unit":"db","qty":1,"note":"300 literes indirekt tároló, cirkulációs szivattyú, biztonsági és hőmérsékletszabályzó szerelvények. A fűtési puffer külön tétel.","basis":"tervi"},{"id":"r09-03","group":"r09","phase":"A","label":"Fűtési puffer, gépházi osztó és hidraulika","unit":"készlet","qty":1,"note":"REV2 szerint 500 literes puffer és háromkörös osztó. A másik szakági változat 80 literes puffert jelöl. A választott hőszivattyúhoz illesztett egyetlen kivitelt kell dokumentálni. A REV2 2 db HEXONIC LB31-20H forrasztott lemezes hőcserélőt is tartalmaz: jelölje, melyik körhöz tartozik. Ha a medence vagy a jakuzzi fűtéséhez kell, nem része ennek a kiírásnak; ezt Tisztázandóként jelölje.","basis":"tervi"},{"id":"r09-04","group":"r09","phase":"A","label":"Vizes padlófűtés a rendes rétegrendben, alaprendszer","unit":"m²","qty":237.1,"note":"REV2 tételes kiírás szerint 237,1 m²: 196 m² acélhálóra szerelt (osztás 10 cm) és 3 m² (osztás 15 cm) padlófűtés 30 mm-es raszterhálós hő- és lépéshangszigetelő lemezen, valamint 38,1 m² profillemezre szerelt, vékony padlófűtés (Uponor Minitec 9,9×1,1). Cső, rögzítés, osztó-gyűjtők, nyomáspróba. A korábbi 290 m²-es összehasonlító mennyiség elavult. Az emeleti vékony rendszer többlete az r11-ben.","basis":"tervi"},{"id":"r09-05","group":"r09","phase":"A","label":"Aktív mennyezethűtő felület és körvezeték","unit":"m²","qty":118,"note":"REV2 tételes kiírás szerint 118 m²: 100 m² nedves fektetésű, vakolatba ágyazott mennyezeti fűtő-hűtő felület (Uponor Minitec 9,9×1,1, csőrögzítő sínben, osztás 10 cm) és 18 m² száraz fektetésű gipszkartonos panel (Uponor Renovis). Körvezeték, osztó és nyomáspróba. A korábbi 185 m²-es panelmennyiség elavult. A vakolat az r12-ben, a semleges álmennyezet az r16-ban.","basis":"tervi"},{"id":"r09-06","group":"r09","phase":"A","label":"Fűtési-hűtési zónavezérlés és harmatpontvédelem","unit":"rendszer","qty":1,"note":"A választott rendszer termosztátjai, szelepmozgatói és hűtésbiztonsági reteszelése. REV2 szerinti 2 kezelő és 10 szobai szabályzó referencia. Az épületautomatika csak a külső illesztést tartalmazza.","basis":"tervi"},{"id":"r09-07","group":"r09","phase":"A","label":"Hideg- és melegvíz-, illetve lefolyókiállások","unit":"pont","qty":96,"note":"2025-ös kiírási pontszám, konszignációval darabra igazolandó. A végponti csatlakozás, vezeték és szigetelés munkahatárát meg kell jelölni. A látható szaniterek az r17-ben.","basis":"kiírási"},{"id":"r09-08","group":"r09","phase":"A","label":"Zuhanyfolyókák beépítése","unit":"db","qty":4,"note":"REV2 szerint 1 db 100 cm és 3 db 70 cm. Tartalmazza a beépítőtestet, bűzzárat és bekötést. A vízszigetelés csatlakozó rétege az r15-ben.","basis":"tervi"},{"id":"r09-09","group":"r09","phase":"A","label":"Szaniter szerelőkeretek és falsík alatti szerelvények","unit":"rendszer","qty":1,"note":"REV2 szerint 4 falba épített WC-tartály és 1 önálló WC. A 2025-ös változat 5 tartály szerelését jelöli. A kivitelben a 2 vizelde és 2 bidé szerelvényeit, valamint a zuhany- és mosdóboxokat is egyeztetni kell.","basis":"tervi"},{"id":"r09-10","group":"r09","phase":"A","label":"Vízszűrés és vízlágyítás","unit":"készlet","qty":1,"note":"Visszamosható szűrő, kompakt vízlágyító, kerülőág, lefolyó és beüzemelés, a vízellátás műszaki tervével egyeztetve.","basis":"tervi"},{"id":"r09-11","group":"r09","phase":"A","label":"Külső víznyomóvezetékek a bekötési pontig","unit":"fm","qty":42,"note":"REV2 szerint 32 fm Ø40 és 10 fm Ø25. A 2025-ös 25 fm külső közmű külön nyomvonal igazolása nélkül nem adandó hozzá. Árok visszatöltése külön, a vezetéken nyomáspróba és fertőtlenítés.","basis":"tervi"},{"id":"r09-12","group":"r09","phase":"A","label":"Szennyvíz-gerinc és külső közműcsatlakozás","unit":"fm","qty":null,"note":"A beltéri, pontonként már elszámolt szakaszokon kívül. A tényleges nyomvonal, meglévő bekötés és folyási szint felmérése szükséges. A fan-coilok kondenzvíz-bekötését az r09-14 tartalmazza.","basis":"felmérendő"},{"id":"r09-13","group":"r09","phase":"A","label":"Hidraulikai beszabályozás, nyomáspróba és átadás","unit":"rendszer","qty":1,"note":"A részrendszerek együttes próbája, beállítási és mérési jegyzőkönyv, melegvíz-cirkuláció és hűtési reteszelések ellenőrzése. Az egyes gépek saját gyártói beüzemelése a géptételben.","basis":"tervi"},{"id":"r09-14","group":"r09","phase":"A","label":"Fan-coilok a kiegészítő fűtéshez és hűtéshez","unit":"db","qty":2,"note":"REV2 szerint 1 db Sabiana CRC44 légcsatornázható és 1 db Sabiana SK22 mennyezeti kazettás, 2 csöves fan-coil a földszinti tárolóba és az emeleti gardróbba, a hőszivattyús rendszerre kötve: TA-TBV beszabályozó szelepek, infrás távvezérlő, kondenzvíz-elvezetés, a CRC44 légcsatornái és rácsai, gyártói beüzemelés. Önálló split klíma csak tervezői jóváhagyással, a Javaslatok között ajánlható. Villamos betáp az r13-ban.","basis":"tervi"},{"id":"r09-15","group":"r09","phase":"A","label":"Tárolós elektromos vízmelegítő","unit":"db","qty":1,"note":"REV2 szerint 1 db tárolós villanybojler (ECO funkció, LCD kijelző), a gépészeti terv szerinti helyen. Elhelyezés, bekötés, biztonsági szerelvények. Villamos betáp az r13-ban.","basis":"tervi"},{"id":"r10-01","group":"r10","phase":"A","label":"Hővisszanyerős központi szellőztetőgép","unit":"db","qty":1,"note":"REV2 rendszerlégszállítás 300 m³/h, névleges maximum 550 m³/h. Tartozékok, előfűtés/fagyvédelem, vezérlő és kondenzvíz-elvezetés. Az esetleg szükséges aktív párátlanítást külön meg kell nevezni.","basis":"tervi"},{"id":"r10-02","group":"r10","phase":"A","label":"Ø75 mm elosztó légcsatorna szerelése","unit":"fm","qty":350,"note":"REV2 szerint 7 tekercs × 50 fm, tömítésekkel és rögzítéssel. Merev főág és szelepek külön tételben.","basis":"tervi"},{"id":"r10-03","group":"r10","phase":"A","label":"Légtechnikai főágak, osztók és hangcsillapítók","unit":"készlet","qty":1,"note":"REV2 8 fm nagyobb és 2+3 fm kisebb merev cső, idomok, 2 osztódoboz, 2 hangcsillapító, 5 m² vezetékszigetelés, külső rácsok. A 350 fm elosztócső külön sor.","basis":"tervi"},{"id":"r10-04","group":"r10","phase":"A","label":"Befúvó és elszívó végpontok","unit":"db","qty":16,"note":"8 befúvó + 8 elszívó; 4 mennyezeti és 12 oldalfali szelepfogadó. Egy végpont egy elszámolási egység.","basis":"tervi"},{"id":"r10-05","group":"r10","phase":"A","label":"Szellőzés faláttörése és légzáró lezárása","unit":"db","qty":14,"note":"REV2 szerint 30 × 30 cm méretig. Meglévő nyílás levonandó. Szerkezeti engedélyezés és nyomvonal a kivitelezés előtt egyeztetendő.","basis":"tervi"},{"id":"r10-06","group":"r10","phase":"A","label":"Légtechnikai beszabályozás és helyiségenkénti mérés","unit":"rendszer","qty":1,"note":"Légmennyiség-mérési jegyzőkönyv, zaj és kondenzáció ellenőrzése, kezelői oktatás. A központi gép és a légcsatornák külön sorok.","basis":"tervi"},{"id":"r11-01","group":"r11","phase":"A","label":"Emeleti vékony padlófűtés és rétegrend különbözete","unit":"m²","qty":100,"note":"Vizsgálandó emeleti felület. Csak a r09 és r12 alaprétegrendjének kiváltásával keletkező nettó anyag- és munkakülönbség. Födém, kész szint, küszöb és lépcső felmérésével igazolandó 265 cm célmagasság.","basis":"kiírási"},{"id":"r12-01","group":"r12","phase":"A","label":"Belső oldalfalvakolat","unit":"m²","qty":590.1,"note":"Régi kiírás és 2025-ös 590 m² kerekített referencia. Hálózás és élvédelem anyagváltásnál, a megmaradó jó vakolat felmérésével. A festés az r16-ban. Az újabb kb. 850 m² falat és hűtött mennyezetet együtt jelöl, nem további 850 m².","basis":"tervi"},{"id":"r12-02","group":"r12","phase":"A","label":"Belső mennyezet hagyományos vakolata","unit":"m²","qty":198.04,"note":"Régi kiírás. Csak azon a feltárt felületen árazható, amelyen nem készül sem álmennyezet, sem aktív panel és nem elég a glettelés.","basis":"tervi"},{"id":"r12-03","group":"r12","phase":"A","label":"Belső nyíláskávák vakolata","unit":"m²","qty":29.81,"note":"A régi kiírás ezen felül 32,59 m² légzárószalag-fogadó simítást és 121,47 fm csatlakozóprofilt mutat. Egy összetett kivitel, a kávák falvakolatban ismételten nem számolhatók el.","basis":"tervi"},{"id":"r12-04","group":"r12","phase":"A","label":"Padló alatti hőszigetelés és elválasztó réteg","unit":"m²","qty":325.04,"note":"Régi kiírás vetülete; a földszint, emelet és garázs eltérő vastagsággal. Az r09 padlófűtés rögzítőlemezének és az r11 változatnak az átfedése külön kimutatandó.","basis":"tervi"},{"id":"r12-05","group":"r12","phase":"A","label":"Úsztatott cementesztrich a lakótérben","unit":"m²","qty":285.19,"note":"Régi kiírás, dilatációval és peremszigeteléssel. A garázs külön tétel, az emeleti rendszer cseréje az r11-ben csak a különbözetre.","basis":"tervi"},{"id":"r12-06","group":"r12","phase":"A","label":"Lejtésben kialakított garázsesztrich","unit":"m²","qty":39.85,"note":"Régi kiírás szerinti vetület. A végleges padlóburkolat és üzemi vízszigetelés az r15-ben.","basis":"tervi"},{"id":"r13-01","group":"r13","phase":"A","label":"Épületvillamossági alapszerelés","unit":"m²","qty":325,"note":"A 2025-ös szakági kiírás a két szint összterületével számol. Erős- és gyengeáramú kábelezés, csövek és dobozok. Áramkörök, kültéri és teraszkiállások, adat-, kaputelefon- és kameranyomvonalak végleges terv szerint. A végszerelés az r14-ben.","basis":"kiírási"},{"id":"r13-02","group":"r13","phase":"A","label":"Mérőhely és villamos teljesítménybővítés","unit":"csomag","qty":null,"note":"Meglévő mérőhely, rendelkezésre álló teljesítmény, hőszivattyú, elektromos töltő előkészítése és terhelési számítás alapján. A hálózati engedélyes költségét és a kivitelezést külön kell megjelölni.","basis":"felmérendő"},{"id":"r13-03","group":"r13","phase":"A","label":"Elektromosautó-töltő előkészítése","unit":"pont","qty":null,"note":"Jóváhagyott kiosztás szerinti elkülönített áramkör, védőcső és csatlakozási hely. A töltőkészülék külön döntés. A r13 általános vezetékezésben szereplő szakasz ismételten nem árazható.","basis":"felmérendő"},{"id":"r14-01","group":"r14","phase":"A","label":"Kapcsolók, csatlakozóaljzatok és adatvégpontok","unit":"db","qty":null,"note":"Helyiségenkénti, kültéri követelményeket is feltüntető szerelvénykonszignáció szükséges. A r13 kábelezést nem tartalmazza ez a sor.","basis":"felmérendő"},{"id":"r14-02","group":"r14","phase":"A","label":"Belső és szükséges kültéri világítótestek","unit":"db","qty":null,"note":"Lámpatestek, tápegységek, felhelyezés. A végleges lámpajegyzék és a munkafázisonként szükséges világítás alapján adandó meg.","basis":"felmérendő"},{"id":"r14-03","group":"r14","phase":"A","label":"Elosztók, védelmek, alapvezérlés és villamos mérések","unit":"rendszer","qty":1,"note":"Elosztók és védelmi berendezések, működési próba, jelölt áramkörök, villamos biztonsági felülvizsgálat és dokumentáció. Az árnyékoló saját motorvezérlése az r22-ben, gépészeti szabályozók az r09-ben.","basis":"kiírási"},{"id":"r14-04","group":"r14","phase":"A","label":"Riasztó, kamera és adatátviteli végberendezések","unit":"rendszer","qty":null,"note":"Előkészítés vagy teljes kiépítés eszközjegyzékkel. A r13 alapkábelt és a r14-01-ben már szereplő passzív hálózati végpontokat ki kell zárni.","basis":"felmérendő"},{"id":"r14-05","group":"r14","phase":"A","label":"Okosotthon kezelőfelület és szakági rendszerek illesztése","unit":"rendszer","qty":1,"note":"A fő világítási körök, árnyékolás és gépészet közös felülete. Csak az interfészek, programozás és rendszerpróba; a r09, r14-03 és r22 önálló vezérlőelemei külön maradnak.","basis":"kiírási"},{"id":"r15-01","group":"r15","phase":"A","label":"Beltéri kerámia- vagy gres falburkolat","unit":"m²","qty":150,"note":"Régi kiírás szerint, kiosztás, vágások, élképzés, ragasztó és fugázás tartozék. A burkolóanyag kategóriáját és megajánlott termékét fel kell tüntetni.","basis":"kiírási"},{"id":"r15-02","group":"r15","phase":"A","label":"Beltéri kerámia- vagy gres padlóburkolat","unit":"m²","qty":175,"note":"Régi belsőépítészeti referencia. Helyiségenkénti bontás szükséges a garázs esetleges átfedésének kizárására. A járófelület szegélyei a sorban.","basis":"kiírási"},{"id":"r15-03","group":"r15","phase":"A","label":"Melegburkolat és szegélyezés","unit":"m²","qty":120,"note":"Régi kiírás fa vagy laminált felületre. A kiválasztott teljes rétegrendnek a padlófűtéshez illeszkednie kell.","basis":"kiírási"},{"id":"r15-04","group":"r15","phase":"A","label":"Garázspadló kész burkolata","unit":"m²","qty":42.17,"note":"Régi kiírás szerinti felület lábazattal. Csak az előző grespadló-sorban nem szereplő garázsrész. Típust és csúszásállóságot az ajánlat jelölje.","basis":"tervi"},{"id":"r15-05","group":"r15","phase":"A","label":"Beltéri önterülő padlókiegyenlítés","unit":"m²","qty":80,"note":"Régi kiírásban kb. 5 mm réteg. Síkpontosság-mérés után a valóban szükséges nettó felület igazolandó. Az esztrich külön munkanem.","basis":"kiírási"},{"id":"r15-06","group":"r15","phase":"A","label":"Vizeshelyiségi falak burkolat alatti vízszigetelése","unit":"m²","qty":95.5,"note":"A régi kiírás függőleges felülete. Áttörési mandzsetták és rendszerazonos hajlaterősítés; a fal és padló együttes referencia-hajlathossza 78,20 fm.","basis":"tervi"},{"id":"r15-07","group":"r15","phase":"A","label":"Vizeshelyiségi padló burkolat alatti vízszigetelése","unit":"m²","qty":62.63,"note":"Régi kiírás padlófelülete. A folyókák gallércsatlakozása ide tartozik, a közös hajlaterősítés egyszer számolható el.","basis":"tervi"},{"id":"r15-08","group":"r15","phase":"A","label":"Garázs kent vízszigetelése és lábazati felhajtása","unit":"m²","qty":62.97,"note":"Régi kiírás szerint 39,57 m² alapfelület + 19,50 m² hajlaterősítési sáv + 3,90 m² lábazat. Ez rétegfelület, nem további járható padló.","basis":"tervi"},{"id":"r16-01","group":"r16","phase":"A","label":"Gipszkarton válaszfalak","unit":"m²","qty":32.5,"note":"Régi kiírás 25,24 m² normál, 4,53 m² egy oldalon és 2,73 m² két oldalon impregnált fal. Tartószerkezet, borítás és illesztés, festés külön tétel.","basis":"tervi"},{"id":"r16-02","group":"r16","phase":"A","label":"Vizeshelyiségi és gépészeti előtétfalak","unit":"m²","qty":50.52,"note":"Régi kiírás 38,97 m² vizeshelyiségi és 11,55 m² akna előtti borítás. Tartószerkezet és megfelelő minőségű lapok.","basis":"tervi"},{"id":"r16-03","group":"r16","phase":"A","label":"Passzív álmennyezet, dobozolások és revíziós nyílások","unit":"m²","qty":null,"note":"Szintenkénti végleges kiosztás alapján. A régi 106,14 m² hűtő-fűtő álmennyezet és a r09 aktív mennyezeti panel nem ismételhető; a különálló hordozó vagy záró réteg műszaki határát jelölni kell.","basis":"felmérendő"},{"id":"r16-04","group":"r16","phase":"A","label":"Belső glettelés és festés","unit":"m²","qty":926.79,"note":"Régi közös falfelületi és mennyezeti referencia. Festhető kész felületként egyben adandó meg, Q3 előkészítéssel. Burkolt, takart és gyárilag kész felületet le kell vonni. Az újabb kimutatás kb. 1100 m²-t jelöl. A két érték ugyanazon munkára adott eltérő referencia, felülettérképpel pontosítandó.","basis":"tervi"},{"id":"r17-01","group":"r17","phase":"A","label":"WC-készletek végszerelése","unit":"db","qty":5,"note":"REV2 4 hátsó és 1 alsó kifolyású csésze. Készülék, ülőke, működtetés és bekötés. A mélyen beépített szerelőkeretek az r09-ben.","basis":"tervi"},{"id":"r17-02","group":"r17","phase":"A","label":"Vizeldék végszerelése","unit":"db","qty":2,"note":"REV2 szerinti készülék, öblítés és látható szerelvények. Az építtető által biztosított készletet egyenként kell azonosítani.","basis":"tervi"},{"id":"r17-03","group":"r17","phase":"A","label":"Bidék és csaptelepek","unit":"db","qty":2,"note":"REV2 szerinti darab. Készülék, végleges csaptelep, szifon és szerelés. Falsík alatti szerelőkeret az r09-ben.","basis":"tervi"},{"id":"r17-04","group":"r17","phase":"A","label":"Kézmosók és mosdók csapteleppel","unit":"db","qty":9,"note":"REV2: 2 kézmosó, 1 további mosdó és 6 mosdókagyló, összesen 9 csaptelep. A konszignációt helyiségek szerint ellenőrizni kell. Egy másik szakági kiosztás nyolc mosdót jelöl; az eltérés a készülékjegyzéken tisztázandó.","basis":"tervi"},{"id":"r17-05","group":"r17","phase":"A","label":"Kádak csapteleppel és végszereléssel","unit":"db","qty":2,"note":"REV2 szerint 2 kád és 2 kádcsaptelep, a másik műszaki változat 1 kádat jelöl. A végleges darab és típus helyiségenként igazolandó. A két műszaki változat mennyisége nem összeadandó.","basis":"tervi"},{"id":"r17-06","group":"r17","phase":"A","label":"Zuhanycsaptelepek és látható zuhanyszerelvények","unit":"db","qty":5,"note":"REV2 szerint 5 zuhanyrendszer. Jelölendő az esetleges kültéri vagy más csomaghoz tartozó egység, amelyet ebből a darabból le kell vonni. Az újabb összesítő négy zuhanyt jelöl, a REV2 öt zuhanycsaptelepet.","basis":"tervi"},{"id":"r17-07","group":"r17","phase":"A","label":"Egyedi zuhanyüvegek és zuhanyajtók","unit":"db","qty":5,"note":"Üvegkonszignáció szerinti öt beépített egység. Referenciaméretek cm-ben: 72+76 × 250, 83 × 250, 150 × 250, illetve két egyedi ajtós/kabinos egység. Végleges gyártási méret burkolás után.","basis":"tervi"},{"id":"r17-08","group":"r17","phase":"A","label":"Mosogatók és mosogató-csaptelepek bekötése","unit":"db","qty":3,"note":"REV2 szerint 3 db beépített, egymedencés rozsdamentes mosogató és 3 mosogató-csaptelep elhelyezése és bekötése. Ha a mosogató a konyhabútor része, csak a csaptelepet és a bekötést árazza, és ezt jelölje.","basis":"tervi"},{"id":"r18-01","group":"r18","phase":"A","label":"Beltéri ajtók, tokok, kilincsek és vasalatok","unit":"db","qty":null,"note":"Az újabb program 12 rejtett tokos beltéri ajtót jelöl, a korábbi tételjegyzék darab nélkül. Csak a külön megajánlott üvegajtókon kívüli ajtók szerepelhetnek itt. Ha a 12 a két keretelt üvegajtót is tartalmazza, a 12 helyett legfeljebb 10 db számolható ezen a soron; nyílásjegyzékkel tisztázandó.","basis":"felmérendő"},{"id":"r18-02","group":"r18","phase":"A","label":"Bejárati ajtó állapotellenőrzése és végbeállítása","unit":"db","qty":1,"note":"A szerkezet megléte, zárása, küszöbcsatlakozása és vasalata felmérendő. Új ajtó szállítását csak igazolt hiány vagy külön jóváhagyás esetén tüntesse fel.","basis":"kiírási"},{"id":"r18-03","group":"r18","phase":"A","label":"Meglévő garázskapu szerelése és beüzemelése","unit":"db","qty":1,"note":"Régi kiírás szerinti 5000 × 2125 mm kapu. A kapulap újbóli beszerzése kizárandó; meglévő sín, motor, irányítás és rögzítés állapotát fel kell mérni.","basis":"tervi"},{"id":"r18-04","group":"r18","phase":"A","label":"Belső üvegfal tolóajtóval","unit":"db","qty":1,"note":"Régi üvegkonszignáció szerint 185 × 250 cm fix és toló elemmel. A belső ajtó- és zuhanyüveg-sorokban már árazott elemeket le kell vonni.","basis":"tervi"},{"id":"r18-05","group":"r18","phase":"A","label":"Kapcsolható belső üvegfal a fürdőnél","unit":"db","qty":1,"note":"01_4 jelű üvegfal; korábbi üveges kiírásban 123 × 250 cm. Alaptípust, tartószerkezetet, elektromos vezérlést és betáplálási határt meg kell adni. A savmart kivitel kizárólag helyettesítő alternatíva.","basis":"tervi"},{"id":"r18-06","group":"r18","phase":"A","label":"Keretelt beltéri üvegajtók","unit":"db","qty":2,"note":"Korábbi üvegkonszignáció 00_4 és 00_5, 75 × 210 cm átlátszó, illetve savmart ajtó. Szállítás és beépítés; a teljes ajtójegyzéken azonosítandó, az r18-01-ben nem ismételhető.","basis":"tervi"},{"id":"r18-07","group":"r18","phase":"A","label":"Belső párkányok és könyöklők","unit":"fm","qty":6.4,"note":"Régi kiírásban 26 cm széles fa könyöklő. Felülettel, toldásokkal és ragasztással; külső párkányok a homlokzati munkanemben.","basis":"tervi"},{"id":"r19-01","group":"r19","phase":"A","label":"Belső lépcső pontmegfogásos üvegkorlátja","unit":"fm","qty":4.07,"note":"Üvegkonszignáció szerinti lépcső melletti szakasz, rögzítésekkel és beépítéssel. A kültéri korlát az r20-ban.","basis":"tervi"},{"id":"r19-02","group":"r19","phase":"A","label":"Belső főlépcső kész burkolata és élképzése","unit":"fok","qty":null,"note":"A szintek és az emeleti padlórétegrend egyeztetése után. A tetőteraszra vezető külön kar lépcsőfokai nem tartoznak bele. A teljes terv lebegő belső lépcsőt ír le: acél vagy más fogadószerkezet, kapcsolatok és járófelület egy tételben, belső üvegkorlát külön.","basis":"felmérendő"},{"id":"r19-03","group":"r19","phase":"C","label":"Járható üvegfokok a tetőfeljáróhoz","unit":"db","qty":null,"note":"Az újabb kimutatás 19 üvegfokot ad meg, a régebbi üvegkonszignáció ugyanerre a lépcsőkarra 13 db, 70 × 30 cm-es fokot jelöl. A vállalt darabszámot és fokméretet az aktuális 01_7 lépcsőrajz szerint kell megadni. A tartószerkezet az r19-04 sorhoz tartozik.","basis":"felmérendő"},{"id":"r19-04","group":"r19","phase":"C","label":"Tetőfeljáró acél tartószerkezete és feljárólezárása","unit":"készlet","qty":1,"note":"Statikai méretezés, gyártás, szerelés, korrózióvédelem, a lépcsőkarhoz tartozó korlát és időjárásálló feljárólezárás. Az üvegfokok az r19-03, a födém vízszigetelése az r04, a tetőterasz peremének üvegkorlátjai az r20 tételei.","basis":"kiírási"},{"id":"r20-01","group":"r20","phase":"A","label":"Emeleti teraszmellvéd alacsony üvegkorlátja","unit":"fm","qty":65.1,"note":"A részletkonszignáció 01_1 jele, 30 cm magas üveg a meglévő mellvéd tetején. U-profil, igazolt rögzítés, szerelés és szigetelt csatlakozás. A szükséges teljes mellvédmagasságot a kész szintekről kell ellenőrizni. Az emeleti leesésvédelem az első ütem része. Az építés közbeni ideiglenes védelem és az átadáskori végleges védelem feltételeit a tervezővel tisztázni kell.","basis":"tervi"},{"id":"r20-02","group":"r20","phase":"C","label":"Tetőterasz teljes magasságú üvegkorlátja","unit":"fm","qty":9.77,"note":"A részletkonszignáció 02_1 jele, korábbi üvegmagasság 90 cm. A tervező által igazolt végleges magasságot, vonalvezetést, terhelést és rögzítést kell beárazni. A C ütem csak akkor különíthető el, ha az A ütem átadásához elfogadott használati és védelmi megoldás ezt lehetővé teszi.","basis":"tervi"},{"id":"r20-03","group":"r20","phase":"C","label":"Tetőteraszi mellvéd kiegészítő attikaüvege","unit":"fm","qty":22.8,"note":"A korábbi kiírás 22,80 fm hosszon 17 cm magas kiegészítő attikaüveget jelöl. Egy másik csomagleírásban 15 cm szerepel. A vállalt magasságot és nyomvonalat a tervező által jóváhagyott mellvédmetszet és a kész padlószint alapján kell megadni. Az r20-02 korlátjával közös szakasz csak egyszer számolható el.","basis":"tervi"},{"id":"r21-01","group":"r21","phase":"B","label":"Fedett földszinti terasz járóburkolata","unit":"m²","qty":32,"note":"Az aktuális építészeti program fedett része. Fagyálló kész burkolat, ágyazat vagy állítható alátét, szegély és dilatáció. A régi kerti kiírás 128,65 m²-es területével átfedésvizsgálat szükséges. Az újabb földszinti aljzat kb. 165 m²-es referencia, a teljes teraszkiírás kb. 300 m²-t jelöl, eltérő határokkal. Mindhárom szinten külön vetület szükséges.","basis":"tervi"},{"id":"r21-02","group":"r21","phase":"B","label":"Emeleti terasz járóburkolata","unit":"m²","qty":147.6,"note":"Kész járófelület, alátámasztás, szegély, dilatáció, ellenőrizhető lefolyók és küszöbök. A szerkezeti vízszigetelés és a mellvédfedés más munkanem.","basis":"tervi"},{"id":"r21-03","group":"r21","phase":"C","label":"Tetőterasz használható járófelülete","unit":"m²","qty":null,"note":"A tetőteraszi járóburkolat egyik programadata 33,9 m², egy másik kiírás közelítő vetülete 60 m². A nettó járófelületet az aktuális tetőterasz-alaprajzon kell lehatárolni és felmérni. Az árban szerepeljen az álpadló alátámasztása, szegélye és a lefolyók szerelhető hozzáférése. A vízszigetelés az A ütem r04, a kültéri korlát az r20 tétele.","basis":"felmérendő"},{"id":"r22-01","group":"r22","phase":"A","label":"Nappali üvegfal külső motoros árnyékolása","unit":"fm","qty":12,"note":"Az üvegfal hozzávetőleges hossza. Nyílásmagasság, tényleges árnyékolt felület, motorok, modulok és szélvédelem megajánláskor rögzítendők. Rögzítés és motorvezérlés itt, betápkábel az r13-ban. A tokok és a vezetősínek csomópontját a választott homlokzati rendszerhez kell igazítani: a terv 30 cm EPS-hez készült, és az építész szerint 20 cm-es rétegrendnél a zsalúziák kilógnak a falsíkból. Adja meg a választott tokmegoldást és a hozzá szükséges hőszigetelés-vastagságot.","basis":"kiírási"},{"id":"r22-02","group":"r22","phase":"A","label":"Déli és nyugati emeleti nyílások motoros árnyékolása","unit":"m²","qty":null,"note":"Szélesség és magasság ablaktengelyenként. A gépészeti hőterhelési számítás és a homlokzati terv alapján szükséges körökkel, motorral és szélszenzorral. A nappali 12 fm üvegfala másik sor. A tokok és a vezetősínek csomópontját a választott homlokzati rendszerhez kell igazítani: a terv 30 cm EPS-hez készült, és az építész szerint 20 cm-es rétegrendnél a zsalúziák kilógnak a falsíkból. Adja meg a választott tokmegoldást és a hozzá szükséges hőszigetelés-vastagságot.","basis":"felmérendő"},{"id":"r22-03","group":"r22","phase":"B","label":"Többi homlokzati nyílás árnyékolója","unit":"m²","qty":null,"note":"Külön árazandó a teljes tervből a kiválasztott további nyílásokra, az A ütem déli, nyugati és nappali nyílásainak levonásával. A betáp előkészítését az r13-ban kell feltüntetni.","basis":"felmérendő"},{"id":"r23-01","group":"r23","phase":"B","label":"Utcai kerítés","unit":"fm","qty":25,"note":"Régi kerítéskiírás előirányzati hossza. Kerítésmezők, alapozás és felületképzés; a gépkocsi- és személykapu helyét a teljes hosszból le kell vonni.","basis":"kiírási","tenderPackage":"K"},{"id":"r23-02","group":"r23","phase":"B","label":"Gépkocsi- és személykapu","unit":"db","qty":null,"note":"Kapunyílások és tényleges darabok felmérése. Tartószerkezet, motor, biztonsági érzékelők és helyi vezérlés. A hálózati betáp és kaputelefon alapkábelezése az r13-ban.","basis":"felmérendő","tenderPackage":"K"},{"id":"r23-03","group":"r23","phase":"B","label":"Gépkocsi-beálló burkolata és alapja","unit":"m²","qty":null,"note":"A korábbi tereprendezési terv 67,76 m²-t jelöl az utcai csatlakozással együtt, a másik kimutatás kb. 112 m² beállót. A végleges térkő és fagyálló alap nettó felületét egyeztetett helyszínrajzon kell lehatárolni. A telekhatáron túli rész külön azonosítandó, a gyalogjárdával közös felület csak egyszer számolható.","basis":"felmérendő","tenderPackage":"K"},{"id":"r23-04","group":"r23","phase":"B","label":"Gyalogjárda burkolata és alapja","unit":"m²","qty":21.82,"note":"Régi tereprendezési terv, beállótól és terasztól elkülönített nettó felület. Fagyálló ágyazat, szegély és végleges burkolat. Az első ütem átadásához szükséges ideiglenes vagy végleges biztonságos megközelítést az r03-01 alatt kell tisztázni. Itt az azon felüli, külön rendelt végleges járdaburkolat szerepel.","basis":"tervi","tenderPackage":"K"},{"id":"r23-05","group":"r23","phase":"B","label":"Nyitott kerti terasz és hozzá tartozó lépcsők","unit":"m²","qty":null,"note":"A régi referenciasáv 128,65 m², benne a későbbi fedett 32 m²-rel esetleg közös felületek. Az r21 szerinti fedett teraszt le kell vonni. Kizárólag jóváhagyott, ténylegesen külön terület árazható.","basis":"felmérendő"},{"id":"r23-06","group":"r23","phase":"B","label":"Alapkert és végleges tereprendezés","unit":"m²","qty":null,"note":"Tereprendezés, termőföld és gyep a burkolatlan felületeken. A 1281 m² telekméret nem árazási mennyiség. Medence, jacuzzi, szauna és kültéri konyha kívül esik az alapkerten. Az újabb kimutatás kb. 700 m² zöldfelületet jelöl; a nettó területet kerttervvel és helyszínrajzzal kell igazolni.","basis":"felmérendő","tenderPackage":"K"},{"id":"r23-07","group":"r23","phase":"A","label":"Csapadékvíz-szikkasztó modulok és bekötések","unit":"db","qty":28,"note":"REV2 szerint 28 modul. Talajadottság, tényleges befogadó és a meglévő közművek helyszíni ellenőrzése szükséges. Az épület ejtővezetékei az r04-ben. Az újabb program kb. 12 m³ tározó/szikkasztó térfogatot jelöl, ugyanahhoz a rendszerhez, hidraulikai egyeztetéssel.","basis":"tervi"},{"id":"r23-08","group":"r23","phase":"B","label":"Kültéri burkolat folyókás vízelvezetése","unit":"fm","qty":17,"note":"REV2 szerint végzáróval és tisztítóelemmel. A felszíni burkolat széléhez csatlakozik; nem tetőösszefolyó vagy épületen belüli lefolyó. Egy másik kiírás a teraszokra 23,70 fm folyókát jelöl. A teraszi és terepszinti nyomvonalat közös alaprajzon tisztázni kell.","basis":"tervi"},{"id":"r23-09","group":"r23","phase":"A","label":"Közműárkok földmunkája","unit":"m³","qty":40,"note":"REV2 szerinti kitermelés; ebből a visszatöltési és tömörítési referencia 35 m³. Egyetlen összetett tétel, az r09 csővezeték- és a szikkasztó tétel árából a közös földmunka levonandó.","basis":"tervi"},{"id":"r23-10","group":"r23","phase":"B","label":"Kültéri fix elemek és előkészítéseik","unit":"készlet","qty":null,"note":"A teljes külső programban szereplő fix ülőbútorok, növényládák, kültéri zuhany és kukatároló csak elfogadott kiosztással. A készülék és a hozzá tartozó kiállás külön munkahatár. Mobil bútor és kültéri konyha kívül esik ezen a tételen.","basis":"felmérendő"},{"id":"r23-11","group":"r23","phase":"B","label":"Öntözőrendszer és kerti világítás","unit":"csomag","qty":null,"note":"A teljes kerti program bővített tartalma külön megajánlható. Az alapkert tereprendezése és gyeptelepítése, a gépészeti vízvétel és az épületvillamossági kábelezés már árazott részeit le kell vonni.","basis":"felmérendő","tenderPackage":"K"}],"facades":[{"id":"render","label":"Vakolt, színezett hőszigetelő rendszer","note":"Összehasonlító kivitel. Hőszigetelés, rögzítés, hálózott alapréteg, alapozó és színezővakolat. Ugyanazokat az állvány-, káva-, él-, dilatációs és csatlakozási feltételeket kell alkalmazni minden változathoz."},{"id":"micro","label":"Strukturált kültéri mikrocement","note":"Kültéri használatra igazolt komplett mikrocement-bevonat és hőszigetelő fogadórendszer, erősítéssel, felületvédelemmel, a tervezett csomópontokkal és rendszergaranciával."},{"id":"wood","label":"Hőkezelt borovi fenyő, nyitott fugával","note":"Valódi hőkezelt borovi homlokzatburkolat, átszellőztetett légréssel, méretezett fogadószerkezettel, rögzítésekkel, rovarhálóval és lezárásokkal. A felületkezelést és karbantartást az ajánlat nevezze meg."},{"id":"fiber","label":"Átszellőztetett szálcement, EQUITONE vagy egyenértékű","note":"Kért főfali alapváltozat. Komplett szerelt rendszer hőszigeteléssel, konzolokkal, tartóprofilokkal, rögzítésekkel, táblakiosztással, légréssel és lezárásokkal. Adja meg a tábla típusát, vastagságát, felületét, rögzítését és a javasolt hőszigetelés rétegrendjét."},{"id":"hpl","label":"Átszellőztetett homlokzati HPL lap","note":"Kültéri minőségű, kompakt HPL lap, fa- vagy kőhatású felülettel. A teljes rendszer ára foglalja magában a hőszigetelést, hátvázat, rögzítést, lezárásokat és az állványozást. Adja meg a lap típusát, vastagságát, a rögzítés módját és a csomóponti kialakítást."},{"id":"porcelain","label":"Nagyformátumú kőporcelán, rejtett rögzítéssel","note":"Kültéri, szerelt kőporcelán burkolat hőszigeteléssel és a táblákhoz méretezett hátvázzal. Az ár tartalmazza a rejtett mechanikai rögzítést, a kávákat, lezárásokat és az állványt. Adja meg a megajánlott táblaméretet, vastagságot és rögzítőrendszert."},{"id":"terracotta","label":"Átszellőztetett terrakotta lap vagy kerámialamella","note":"Adja meg a beárazott lap vagy lamella típusát és kiosztását. A teljes rendszerbe tartozik a hőszigetelés, hátváz, függesztés, sarok- és nyíláscsatlakozások, lezárások és állványozás."},{"id":"mixed","label":"Vegyes referencia, 60% szálcement és 40% vakolat","note":"Opcionális összehasonlítás az összesen 290 m²-re, 174 m² szálcementtel és 116 m² vakolattal. Közös állványozás, az eltérő rendszerek csatlakozásai, dilatációk és nyíláscsomópontok a teljes árban. A megrendelő elsődleges igénye a közel teljes körbeburkolás."}],"comparisonArea":290,"packages":[{"id":"A","label":"Lakhatásig","note":"Minden, ami a beköltözéshez és a használatbavételhez kell: felmérés és dokumentáció, javítások, tető- és teraszszigetelés, mellvédfedés, homlokzat a mellvédek külső oldalával, konzolaljak, gépészet, villany, belső munkák, kötelező árnyékolás, emeleti üvegkorlát, szikkasztó."},{"id":"B","label":"Teraszok és kültér","note":"Földszinti és emeleti terasz járóburkolata, a mellvédek belső burkolata, nyitott kerti terasz, kültéri folyókák és fix elemek, a többi nyílás árnyékolója."},{"id":"C","label":"Tetőterasz","note":"Tetőfeljáró acélszerkezete üveg fokokkal, a tetőterasz járófelülete, üvegkorlátja és attikaüvege."},{"id":"K","label":"Kert és kerítés","note":"Kerítés, kapuk, beálló, járda, alapkert, öntözés és kerti világítás."}],"defaultRound":1}</script>
+  <script>(() => {
+  'use strict';
+  const scope = JSON.parse(document.querySelector('#scope').textContent);
+  const packages = scope.packages;
+  const phases = Object.fromEntries(packages.map(pkg => [pkg.id, pkg.id === 'K' ? pkg.label + ' · külön kérhető' : pkg.label]));
+  const core = ['A', 'B', 'C'];
+  const version1 = 'LF-2026-11-25-v1', version2 = 'LF-2026-11-25-v2', version3 = 'LF-2026-11-25-v3';
+  const packageOf = row => row.tenderPackage === 'K' ? 'K' : row.phase;
+  const lineStatuses = new Map([
+    ['', 'Árazás szerint'], ['priced', 'Vállalom'], ['excluded', 'Kizárom'],
+    ['byOwner', 'Megrendelői tétel'], ['clarify', 'Tisztázandó']
+  ]);
+  const lineStatusesR1 = new Map([...lineStatuses].map(([key, text]) => [key, key === '' ? 'Benne van a csomagárban' : text]));
+  const modelChoices = new Map([['', 'Válasszon'], ['openBook', 'Fix generáldíj + nyílt könyv'], ['lumpSum', 'Átalányár, a díj benne van'], ['percent', 'Százalékos díj a költségre'], ['mixed', 'Vegyes vagy más konstrukció']]);
+  const modelHelp = {
+    '': 'A kért alap a fix generáldíj nyílt könyvvel, de más konstrukcióban is ajánlhat. A bruttó árplafon, a zárt kizárási lista és a változtatási rend mindegyiknél kell.',
+    openBook: 'Az anyagot és az alvállalkozókat számla szerinti áron, felár nélkül számolja el, a kedvezményeket átadja, és mellé fix generáldíjat kér. A csomagár a becsült költség, díj nélkül.',
+    lumpSum: 'Csomagonként egy fix ár, amiben a díja is benne van. A beszerzéseit nem kell bemutatnia; a kockázat és a megtakarítás is az övé.',
+    percent: 'A tényleges költségre számolt százalékos díj. A csomagár a becsült költség, díj nélkül; a díj százalékát lent adja meg. Csak bruttó árplafonnal együtt értelmezhető.',
+    mixed: 'Például átalányár a tervezett munkákra, és anyagkeret a még ki nem választott burkolatokra, szaniterekre, lámpákra. A megjegyzésben írja le; a csomagár a díjat ne tartalmazza, azt lent adja meg.'
+  };
+  const feeNote = {
+    '': 'generáldíj nélkül: a díjat lent egyszer adja meg',
+    openBook: 'generáldíj nélkül: a díjat lent egyszer adja meg',
+    lumpSum: 'és a díja is benne van (átalányár)',
+    percent: 'díj nélkül: a díj százalékát lent adja meg',
+    mixed: 'generáldíj nélkül: a díjat lent egyszer adja meg'
+  };
+  const kindChoices = new Map([['', 'Nincs jelölve'], ['fixed', 'Fix ár'], ['indicative', 'Irányár']]);
+  const riskPackages = new Map([['', '—'], ...packages.map(pkg => [pkg.id, pkg.id + ' · ' + pkg.label])]);
+  const termLabels = {
+    complete: 'Teljes körű ár: a megjelölt tervekből következő és a használatbavételhez szükséges munkák akkor is benne vannak, ha nincsenek külön kiírva; kivétel csak a felsorolt kizárások és kockázati tételek',
+    siteRisk: 'A bejáráson és a tervekből felismerhető hibák és hiányok kijavítása az árban van; a csak bontáskor feltárható állapotokért csak a felsorolt kockázati tételek szerint, legfeljebb a megadott összegig számol el',
+    infoComplete: 'Az árazáshoz elegendő információ állt rendelkezésre (tervek, tételes kiírás, bejárás); ami hiányzott, azt a tételnél vagy a kizárásoknál jelezte',
+    openBook: 'A beszerzési számlák és az alvállalkozói szerződések bemutatása (nyílt könyvnél)',
+    cap: 'Bruttó árplafon a megjelölt tervekre és munkákra, generáldíjjal és áfával együtt',
+    rebates: 'Minden beszállítói kedvezmény és visszatérítés átadása, írásos jutaléknyilatkozattal (nyílt könyvnél)',
+    quotes: 'Nettó 2 M Ft feletti beszerzésnél 2–3 ajánlat, megrendelői jóváhagyással (nyílt könyvnél)',
+    products: 'A beépítendő fő termékeket (márka, típus) a tételes ajánlatban megnevezi; csere csak egyenértékű, írásban jóváhagyott termékre',
+    schedule: 'A tételes ajánlathoz műszaki és pénzügyi ütemtervet ad (mérföldkövek és összegek), ez a szerződés melléklete',
+    allowances: 'A még ki nem választott anyagok (burkolat, szaniter, lámpatest, beltéri ajtó) keretáron szerepelnek, az eltérést számla szerint, felár nélkül számolja el',
+    changes: 'Változtatás csak előzetes írásos jóváhagyással: az érintett munka előtt megadja az okát és a bizonyítékát (például fotó), a nettó és bruttó árkülönbözetet az ajánlat egységárain, az elmaradó munka jóváírását, az új bruttó végösszeget és az átadási határidőre gyakorolt hatást',
+    certifiedPay: 'Legfeljebb 10% előleg, fizetés műszaki ellenőr által igazolt teljesítés alapján',
+    retention: '5% jótállási visszatartás',
+    delay: 'Késedelmi kötbér vállalása',
+    vatBasis: 'Az alkalmazott áfakulcsok és az áfamegosztás írásos indokolása',
+    supervision: 'Felelős műszaki vezető és e-napló vezetése'
+  };
+  const termChoices = new Map([['', 'Nincs válasz'], ['yes', 'Igen'], ['partial', 'Részben'], ['no', 'Nem']]);
+  const commercialText = ['contact','date','validUntil','start','duration','payment','warranty','exclusions','extras'];
+  const commercialNumbers = {advancePct:100, phaseAFeeFt:1e12, feePct:100, capGrossFt:1e12, capAGrossFt:1e12, capAllGrossFt:1e12};
+  const measures = { tervi:'Terv szerinti', felmérendő:'Felmérendő', kiírási:'Kiírás szerinti' };
+  const riskCount = 10, riskMin = 3, proposalCount = 10, proposalMin = 2;
+  const effectChoices = new Map([['', '—'], ['saving', 'Megtakarítás'], ['extra', 'Felár'], ['same', 'Ár nem változik']]);
+  const roundHelp = {
+    1: '1. kör: csomagonként egy nettó ár. A tételes kiírás lent megnyitható: ez a csomagárak alapja, az 1. körben nem kell beárazni.',
+    2: '2. kör: tételes bontás. Az 1. körben megadott csomagárakat hagyja meg: az összesítő mutatja, mennyiben tér el tőlük a tételes összeg. Ha eltér, a megjegyzésben írja meg, miért.'
+  };
+  const qtyFormat = new Intl.NumberFormat('hu-HU', { maximumFractionDigits: 8 });
+  const ftFormat = new Intl.NumberFormat('hu-HU', { maximumFractionDigits: 0 });
+  const currency = value => value === null ? '—' : ftFormat.format(value) + ' Ft';
+  const signed = value => value === null ? '—' : (Math.round(value) > 0 ? '+' : Math.round(value) < 0 ? '−' : '±') + ftFormat.format(Math.abs(value)) + ' Ft';
+  const percent = (value, base) => {
+    if (!base) return '';
+    const p = Math.round(value / base * 1000) / 10;
+    return (p > 0 ? '+' : p < 0 ? '−' : '±') + qtyFormat.format(Math.abs(p)) + '%';
+  };
+  const vatFactor = share => share === null ? null : 1.05 + .22 * share / 100;
+  const id = name => document.getElementById(name);
+  const localKey = 'lake-forest-tender:' + scope.version;
+  const inputs = new Map();
+  const rowViews = new Map();
+  const phaseViews = new Map();
+  const facadeViews = new Map();
+  const packageViews = new Map();
+  const riskRows = [];
+  const proposalRows = [];
+  let proposalVisible = proposalMin;
+  const statusSelects = [];
+  const scopeIntro = {
+    1: 'Az 1. körben nem kell beárazni. A lista csomagonként mutatja, milyen munkákat és mennyiségeket tartalmaz a csomagár; a tétel nevére kattintva olvashatja a műszaki részleteket. Ha valamelyik tételhez hiányzik az árazáshoz szükséges információ, jelölje Tisztázandónak, és írja meg a tétel megjegyzésénél. Amit nem vállal, jelölje Kizárom. Amit nem jelöl, azt úgy tekintjük, hogy az árazáshoz elegendő információ állt rendelkezésre, és a csomagár tartalmazza.',
+    2: 'A lakhatásig, a teraszokra és a tetőteraszra kérünk tételes árat; a tételes összeg ugyanazt a munkát fedje le, mint a csomagár. A külön kérhető kert- és kerítésmunkák saját fülön jelennek meg. A kiírt mennyiség mellett rögzítse a saját felmérését; ahol eltér, a sor jelzi. A tétel nevére kattintva olvashatja a műszaki részleteket. A fő termékeket (márka, típus) a tétel megjegyzésénél nevezze meg, és az ajánlathoz csatoljon műszaki és pénzügyi ütemtervet. A kizárást, megrendelői beszerzést vagy nyitott kérdést jelölje a sorban, az indoklást a tétel megjegyzésénél írhatja meg.'
+  };
+  let scopeOpen = false;
+  let bidId = newId();
+  let active = 'A';
+  let round = scope.defaultRound === 2 ? 2 : 1;
+  let riskVisible = riskMin;
+  let last = null;
+
+  function newId() {
+    const bytes = new Uint8Array(16);
+    crypto.getRandomValues(bytes);
+    return Array.from(bytes, value => value.toString(16).padStart(2, '0')).join('');
+  }
+  function element(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text != null) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+  function message(text, failed) {
+    const box = id('message');
+    box.hidden = !text;
+    box.textContent = text;
+    box.classList.toggle('alert', Boolean(failed));
+  }
+  function bind(input, key, maximum) {
+    const printed = element('span', '', 'printval');
+    const container = input.closest('.field') ?? input;
+    container.after(printed);
+    inputs.set(key, { input, maximum, printed });
+  }
+  function value(key) {
+    const field = inputs.get(key);
+    const raw = field.input.value.trim();
+    field.printed.textContent = raw || '—';
+    if (!raw) {
+      field.input.removeAttribute('aria-invalid');
+      field.input.setCustomValidity('');
+      return null;
+    }
+    const plain = raw.replace(/[\s  ]/g, '').replace(',', '.');
+    const result = Number(plain);
+    const valid = /^(?:\d+(?:\.\d*)?|\.\d+)$/.test(plain) && Number.isFinite(result) && result <= field.maximum;
+    field.input.setCustomValidity(valid ? '' : 'Adjon meg 0 és ' + qtyFormat.format(field.maximum) + ' közötti számot.');
+    if (valid) field.input.removeAttribute('aria-invalid');
+    else field.input.setAttribute('aria-invalid', 'true');
+    return valid ? result : null;
+  }
+  function numericCell(row, key, label, shortLabel, maximum, unit) {
+    const cell = element('td', null, 'num');
+    cell.dataset.label = shortLabel;
+    const box = element('input', null, 'grid-input');
+    box.type = 'text';
+    box.inputMode = 'decimal';
+    box.autocomplete = 'off';
+    box.placeholder = '—';
+    box.setAttribute('aria-label', label + ' · ' + shortLabel + (unit ? ' (' + unit + ')' : ''));
+    cell.append(box);
+    row.append(cell);
+    bind(box, key, maximum);
+    return box;
+  }
+  function textCell(row, shortLabel, numeric) {
+    const cell = element('td', '', numeric ? 'num' : '');
+    cell.dataset.label = shortLabel;
+    row.append(cell);
+    return cell;
+  }
+  function textInput(row, key, shortLabel, label, maxLength, placeholder) {
+    const cell = textCell(row, shortLabel, false);
+    const input = element('input');
+    input.type = 'text';
+    input.maxLength = maxLength;
+    input.autocomplete = 'off';
+    if (placeholder) input.placeholder = placeholder;
+    input.setAttribute('aria-label', label);
+    cell.append(input);
+    bind(input, key, null);
+    return input;
+  }
+  function table(headings, className, textColumns = []) {
+    const root = element('table', null, className);
+    const columns = element('colgroup');
+    const thead = element('thead'), heading = element('tr'), body = element('tbody');
+    for (const [index, name] of headings.entries()) {
+      columns.append(element('col'));
+      const th = element('th', name, index > 0 && !textColumns.includes(index) ? 'num' : '');
+      th.scope = 'col';
+      heading.append(th);
+    }
+    thead.append(heading);
+    root.append(columns, thead, body);
+    return {root, body, heading};
+  }
+  function selectBox(choices, label) {
+    const input = element('select');
+    input.setAttribute('aria-label', label);
+    for (const [key, text] of choices) {
+      const option = element('option',text);
+      option.value = key;
+      input.append(option);
+    }
+    return input;
+  }
+  function asText(key, choices) {
+    const {input, printed} = inputs.get(key);
+    const entered = input.value.trim();
+    printed.textContent = choices ? choices.get(entered) || '—' : entered || '—';
+    return entered;
+  }
+  function buildTerms() {
+    for (const [key, text] of Object.entries(termLabels)) {
+      const label = element('label', text);
+      const input = selectBox(termChoices, text);
+      label.append(input);
+      id('contract-terms').append(label);
+      bind(input, 'term:' + key, null);
+    }
+    for (const key of commercialText) bind(id(key),key,null);
+    bind(id('model'),'model',null);
+    for (const [key, max] of Object.entries(commercialNumbers)) bind(id(key),key,max);
+  }
+  function readCommercial() {
+    const commercial = {};
+    for (const key of commercialText) commercial[key] = asText(key);
+    for (const key of Object.keys(commercialNumbers)) commercial[key] = value(key);
+    commercial.model = asText('model', modelChoices);
+    commercial.terms = Object.fromEntries(Object.keys(termLabels).map(key=>[key, asText('term:' + key, termChoices)]));
+    return commercial;
+  }
+  function buildPackages() {
+    const grid = table(['Csomag és tartalom', 'Nettó csomagár', 'Ár jellege', 'Tételes összeg (2. kör)', 'Eltérés a csomagártól'], 'pkgs', [2]);
+    const heads = grid.heading.children;
+    heads[3].classList.add('r2');
+    heads[4].classList.add('r2');
+    for (const pkg of packages) {
+      const tr = element('tr');
+      const head = element('td');
+      head.append(element('strong', pkg.id + ' · ' + phases[pkg.id]), element('small', pkg.note, 'pkg-note'));
+      tr.append(head);
+      numericCell(tr, 'pkg:' + pkg.id + ':netFt', phases[pkg.id], 'Nettó csomagár', 1e12, 'Ft');
+      const kindCell = textCell(tr, 'Ár jellege', false);
+      const kind = selectBox(kindChoices, phases[pkg.id] + ' · ár jellege');
+      kindCell.append(kind);
+      bind(kind, 'pkg:' + pkg.id + ':kind', null);
+      const detail = textCell(tr, 'Tételes összeg (2. kör)', true);
+      const diff = textCell(tr, 'Eltérés a csomagártól', true);
+      detail.classList.add('r2');
+      diff.classList.add('r2');
+      packageViews.set(pkg.id, {detail, diff});
+      grid.body.append(tr);
+    }
+    id('packages').append(grid.root);
+  }
+  function buildRisks() {
+    const grid = table(['Csomag', 'Munka és mi váltja ki', 'Elszámolás módja', 'Legfeljebb, nettó'], 'risks', [1, 2]);
+    for (let i = 1; i <= riskCount; i++) {
+      const tr = element('tr');
+      const pkgCell = textCell(tr, 'Csomag', false);
+      const pick = selectBox(riskPackages, i + '. kockázati tétel · csomag');
+      pkgCell.append(pick);
+      bind(pick, 'risk' + i + ':pkg', null);
+      textInput(tr, 'risk' + i + ':text', 'Munka és mi váltja ki', i + '. kockázati tétel · munka és kiváltó ok', 500, i === 1 ? 'Például: tetőszigetelés cseréje, ha bontáskor beázás nyoma látszik' : '');
+      textInput(tr, 'risk' + i + ':basis', 'Elszámolás módja', i + '. kockázati tétel · elszámolás módja', 300, i === 1 ? 'Például: 18 000 Ft/m², anyag és munka' : '');
+      numericCell(tr, 'risk' + i + ':capFt', i + '. kockázati tétel', 'Legfeljebb, nettó', 1e12, 'Ft');
+      riskRows.push(tr);
+      grid.body.append(tr);
+    }
+    id('risks').append(grid.root);
+  }
+  function buildProposals() {
+    const grid = table(['Csomag', 'Mit cserélne, és mire', 'Miért jobb vagy olcsóbb', 'Hatás', 'Nettó különbözet'], 'proposals', [1, 2, 3]);
+    for (let i = 1; i <= proposalCount; i++) {
+      const tr = element('tr');
+      const pkgCell = textCell(tr, 'Csomag', false);
+      const pick = selectBox(riskPackages, i + '. javaslat · csomag');
+      pkgCell.append(pick);
+      bind(pick, 'prop' + i + ':pkg', null);
+      textInput(tr, 'prop' + i + ':what', 'Mit cserélne, és mire', i + '. javaslat · mit cserélne, és mire', 300, i === 1 ? 'Például: nagyformátumú burkolat helyett hasonló hatású, olcsóbb lap' : '');
+      textInput(tr, 'prop' + i + ':why', 'Miért jobb vagy olcsóbb', i + '. javaslat · indoklás', 300, i === 1 ? 'Érték, minőség, élettartam, karbantartás' : '');
+      const effectCell = textCell(tr, 'Hatás', false);
+      const effect = selectBox(effectChoices, i + '. javaslat · hatás');
+      effectCell.append(effect);
+      bind(effect, 'prop' + i + ':effect', null);
+      numericCell(tr, 'prop' + i + ':amountFt', i + '. javaslat', 'Nettó különbözet', 1e12, 'Ft');
+      proposalRows.push(tr);
+      grid.body.append(tr);
+    }
+    id('proposals').append(grid.root);
+  }
+  function proposalUsed(i) {
+    return ['pkg', 'what', 'why', 'effect', 'amountFt'].some(key => inputs.get('prop' + i + ':' + key).input.value.trim());
+  }
+  function layoutProposals(add) {
+    let lastUsed = 0;
+    for (let i = 1; i <= proposalCount; i++) if (proposalUsed(i)) lastUsed = i;
+    proposalVisible = Math.min(proposalCount, Math.max(proposalMin, lastUsed, proposalVisible + (add ? 1 : 0)));
+    proposalRows.forEach((tr, index) => { tr.hidden = index >= proposalVisible; });
+    id('add-proposal').disabled = proposalVisible >= proposalCount;
+  }
+  function riskUsed(i) {
+    return ['pkg', 'text', 'basis', 'capFt'].some(key => inputs.get('risk' + i + ':' + key).input.value.trim());
+  }
+  function layoutRisks(add) {
+    let lastUsed = 0;
+    for (let i = 1; i <= riskCount; i++) if (riskUsed(i)) lastUsed = i;
+    riskVisible = Math.min(riskCount, Math.max(riskMin, lastUsed, riskVisible + (add ? 1 : 0)));
+    riskRows.forEach((tr, index) => { tr.hidden = index >= riskVisible; });
+    id('add-risk').disabled = riskVisible >= riskCount;
+  }
+  function buildScope() {
+    const work = id('worktables'), nav = id('phase-nav');
+    Object.entries(phases).forEach(([phase, label]) => {
+      const button = element('button', phase + ' · ' + label);
+      button.type = 'button';
+      button.setAttribute('aria-controls', 'phase-' + phase);
+      button.addEventListener('click', () => selectPhase(phase));
+      nav.append(button);
+      const section = element('section', '', 'phase-section');
+      section.id = 'phase-' + phase;
+      const head = element('div', '', 'phase-title');
+      const count = element('span', '', 'small');
+      head.append(element('h3', phase + ' · ' + label), count);
+      const wrapper = element('div', '', 'table-wrap');
+      const grid = table(['Tétel és műszaki tartalom','Kiírt mennyiség','Vállalt mennyiség','Anyag (Ft/egység)','Munkadíj (Ft/egység)','Nettó részösszeg','Állapot'],'worktable');
+      for (const index of [2, 3, 4, 5]) grid.heading.children[index].classList.add('r2');
+      section.append(head, wrapper);
+      wrapper.append(grid.root);
+      work.append(section);
+      phaseViews.set(phase,{button,section,count});
+      for (const item of scope.rows.filter(row => packageOf(row) === phase)) {
+        const tr = element('tr');
+        const heading = element('td');
+        const details = element('details');
+        details.append(element('summary', item.label), element('p', item.note));
+        const noteLabel = element('label', 'Tétel megjegyzése', 'line-comment');
+        const noteInput = element('textarea');
+        noteInput.rows = 2;
+        noteInput.maxLength = 2000;
+        noteInput.setAttribute('aria-label', item.label + ' · tétel megjegyzése');
+        noteInput.placeholder = 'Megajánlott termék (márka, típus), felmérés, kizárás vagy kérdés';
+        noteLabel.append(noteInput);
+        details.append(noteLabel);
+        heading.append(details);
+        bind(noteInput, item.id + ':comment', null);
+        const printedComment = element('small', '', 'printed-comment');
+        heading.append(printedComment);
+        tr.append(heading);
+        const qty = textCell(tr, 'Kiírt mennyiség', true);
+        qty.textContent = (item.qty === null ? '—' : qtyFormat.format(item.qty)) + ' ' + item.unit;
+        qty.append(element('small', measures[item.basis] ?? item.basis, 'quantity-basis'));
+        for (const [key, short, max, unit] of [['qty', 'Vállalt mennyiség', 1e8, item.unit], ['materialFt', 'Anyag', 1e12, 'Ft/' + item.unit], ['laborFt', 'Munkadíj', 1e12, 'Ft/' + item.unit]])
+          numericCell(tr, item.id + ':' + key, item.label, short, max, unit).parentElement.classList.add('r2');
+        const cost = textCell(tr, 'Nettó részösszeg', true);
+        cost.classList.add('r2');
+        const status = textCell(tr, 'Állapot', false);
+        const choose = selectBox(lineStatuses, item.label + ' · vállalás');
+        statusSelects.push(choose);
+        if (item.defaultStatus && lineStatuses.has(item.defaultStatus)) choose.value = item.defaultStatus;
+        const state = element('small', '', 'status');
+        status.append(choose,state);
+        bind(choose, item.id + ':status',null);
+        rowViews.set(item.id, {cost,status:state,printedComment});
+        grid.body.append(tr);
+      }
+    });
+    selectPhase('A');
+    buildPackages();
+    buildRisks();
+    buildProposals();
+    buildTerms();
+    const variants = table(['Vállalt alapváltozat','Anyag (Ft/m²)','Munkadíj (Ft/m²)','Nettó egységár','Nettó ' + qtyFormat.format(scope.comparisonArea) + ' m²-re'],'facade');
+    for (const variant of scope.facades) {
+      const tr = element('tr'), cell = element('td'), label = element('label'), radio = element('input');
+      radio.type = 'radio'; radio.name = 'facade'; radio.value = variant.id;
+      const text = element('span', variant.label, 'fac-label');
+      text.append(element('small', variant.note));
+      label.append(radio,text); cell.append(label); tr.append(cell);
+      numericCell(tr, variant.id + ':materialFt', variant.label, 'Anyag', 1e12, 'Ft/m²');
+      numericCell(tr, variant.id + ':laborFt', variant.label, 'Munkadíj', 1e12, 'Ft/m²');
+      const unit = textCell(tr,'Nettó egységár', true);
+      const total = textCell(tr,'Nettó összehasonlító ár',true);
+      facadeViews.set(variant.id,{tr,radio,unit,total});
+      variants.body.append(tr);
+    }
+    id('facades').append(variants.root);
+    for(const key of ['feeFt','standardSharePct']) bind(id(key),key,key === 'feeFt' ? 1e12 : 100);
+    for(const key of ['company','notes']) bind(id(key), key, null);
+    id('version').textContent = scope.version;
+    id('area').textContent = qtyFormat.format(scope.comparisonArea) + ' m²';
+  }
+  function selectPhase(phase) {
+    active = phase;
+    for (const [key, view] of phaseViews) {
+      view.button.setAttribute('aria-pressed', String(key === phase));
+      view.section.hidden = key !== phase;
+    }
+  }
+  function setRound(next) {
+    round = next === 2 ? 2 : 1;
+    document.body.dataset.round = String(round);
+    for (const button of id('round-nav').querySelectorAll('button')) button.setAttribute('aria-pressed', String(Number(button.dataset.round) === round));
+    id('scope-heading').textContent = round === 2 ? 'Tételes munkakiírás' : 'Tételes kiírás: a csomagárak alapja';
+    id('scope-intro').textContent = scopeIntro[round];
+    id('scope-body').hidden = round === 1 && !scopeOpen;
+    id('scope-toggle').textContent = scopeOpen ? 'Tételes kiírás bezárása' : 'Tételes kiírás megnyitása (' + scope.rows.length + ' tétel)';
+    id('scope-toggle').setAttribute('aria-expanded', String(scopeOpen));
+    for (const select of statusSelects) select.options[0].textContent = round === 1 ? lineStatusesR1.get('') : lineStatuses.get('');
+    id('round-help').textContent = roundHelp[round];
+    id('phase-heading').textContent = round === 2 ? 'Munkacsomagok, tételesen' : 'Csomagárak';
+  }
+  function applyModel(model) {
+    document.body.dataset.model = model;
+    id('model-help').textContent = modelHelp[model] ?? modelHelp[''];
+    id('fee-note').textContent = feeNote[model] ?? feeNote[''];
+  }
+  function stat(host, title, result, detail, prominent, format) {
+    const pair = element('div', null, prominent ? 'stat strong' : 'stat');
+    const name = element('dt', title);
+    if (detail) name.append(element('small', detail));
+    const shown = element('dd', (format || currency)(result));
+    if (format === signed && result !== null && Math.round(result) !== 0) shown.className = result > 0 ? 'plus' : 'minus';
+    pair.append(name, shown);
+    host.append(pair);
+  }
+  function refresh(){
+    const bid = {format:'lake-forest-bid-v3',version:scope.version,bidId,round,company:id('company').value.trim(),feeFt:value('feeFt'),standardSharePct:value('standardSharePct'),notes:id('notes').value.trim(),baseFacade:null,packages:{},risks:[],proposals:[],lines:[],facades:[],commercial:readCommercial()};
+    for (const key of ['company','notes']) inputs.get(key).printed.textContent = bid[key] || '—';
+    for (const pkg of packages) bid.packages[pkg.id] = {netFt:value('pkg:' + pkg.id + ':netFt'), kind:asText('pkg:' + pkg.id + ':kind', kindChoices)};
+    for (let i = 1; i <= riskCount; i++) {
+      const risk = {pkg:asText('risk' + i + ':pkg', riskPackages), text:asText('risk' + i + ':text'), basis:asText('risk' + i + ':basis'), capFt:value('risk' + i + ':capFt')};
+      if (risk.pkg || risk.text || risk.basis || risk.capFt !== null) bid.risks.push(risk);
+    }
+    for (let i = 1; i <= proposalCount; i++) {
+      const proposal = {pkg:asText('prop' + i + ':pkg', riskPackages), what:asText('prop' + i + ':what'), why:asText('prop' + i + ':why'), effect:asText('prop' + i + ':effect', effectChoices), amountFt:value('prop' + i + ':amountFt')};
+      if (proposal.pkg || proposal.what || proposal.why || proposal.effect || proposal.amountFt !== null) bid.proposals.push(proposal);
+    }
+    const progress = Object.fromEntries(Object.keys(phases).map(key=>[key,{count:0, priced:0, sum:0, closed:0, clarify:0, deviate:0}]));
+    for (const row of scope.rows) {
+      const line = {id:row.id,qty:value(row.id + ':qty'),materialFt:value(row.id + ':materialFt'),laborFt:value(row.id + ':laborFt'),status:asText(row.id + ':status', round === 1 ? lineStatusesR1 : lineStatuses),comment:asText(row.id + ':comment')};
+      if (!line.status && line.qty !== null && line.materialFt !== null && line.laborFt !== null) line.status = 'priced';
+      bid.lines.push(line);
+      const view = rowViews.get(row.id);
+      const fields = [line.qty,line.materialFt,line.laborFt];
+      const entered = fields.filter(v => v !== null).length;
+      const canPrice = line.status === '' || line.status === 'priced';
+      const cost = canPrice && entered === 3 ? line.qty * (line.materialFt + line.laborFt) : null;
+      const deviates = cost !== null && row.qty !== null && Math.abs(line.qty - row.qty) > row.qty * 0.01;
+      const invalid = ['qty','materialFt','laborFt'].some(key => inputs.get(row.id + ':' + key).input.hasAttribute('aria-invalid'));
+      view.cost.textContent = currency(cost);
+      if (round === 1) {
+        view.status.className = 'status ' + (line.status === 'clarify' ? 'open' : line.status === 'excluded' || line.status === 'byOwner' ? 'invalid' : 'done');
+        view.status.textContent = line.status === 'excluded' || line.status === 'byOwner' ? 'Nincs a csomagárban' : '';
+      } else {
+        view.status.className = 'status ' + (invalid ? 'invalid' : deviates ? 'open' : cost !== null ? 'done' : 'open');
+        view.status.textContent = invalid ? 'Hibás érték' : deviates ? 'Beárazva, a mennyiség eltér a kiírástól' : cost !== null ? 'Beárazva' : !canPrice ? 'Az ár nyitott' : entered ? 'Részleges ár' : 'Ár nélkül';
+      }
+      view.printedComment.textContent = line.comment;
+      if (cost !== null) inputs.get(row.id + ':status').printed.textContent = lineStatuses.get('priced');
+      const p = progress[packageOf(row)];
+      p.count += 1;
+      if (cost !== null) {p.priced += 1; p.sum += cost; if (deviates) p.deviate += 1;}
+      else if (line.status === 'excluded' || line.status === 'byOwner') p.closed += 1;
+      else if (line.status === 'clarify') p.clarify += 1;
+    }
+    for (const variant of scope.facades) {
+      const option = {id:variant.id,materialFt:value(variant.id + ':materialFt'),laborFt:value(variant.id + ':laborFt')};
+      bid.facades.push(option);
+      const view = facadeViews.get(variant.id);
+      const price = option.materialFt !== null && option.laborFt !== null ? option.materialFt + option.laborFt : null;
+      view.unit.textContent = price === null ? '—' : currency(price) + '/m²';
+      view.total.textContent = currency(price === null ? null : price * scope.comparisonArea);
+      view.tr.classList.toggle('is-base', view.radio.checked);
+      if (view.radio.checked) bid.baseFacade = variant.id;
+    }
+    const caption = p => [p.priced + ' / ' + p.count + ' tétel beárazva', p.closed ? p.closed + ' kizárva vagy megrendelői' : '', p.clarify ? p.clarify + ' tisztázandó' : '', p.deviate ? p.deviate + ' eltérő mennyiség' : ''].filter(Boolean).join(' · ');
+    const done = p => p.priced + p.closed === p.count;
+    for (const pkg of packages) {
+      const view = packageViews.get(pkg.id), p = progress[pkg.id], price = bid.packages[pkg.id].netFt, open = p.count - p.priced - p.closed;
+      const difference = p.priced && price !== null && !open ? p.sum - price : null;
+      view.detail.textContent = p.priced ? currency(p.sum) + (done(p) ? '' : ' · részösszeg') : '—';
+      view.diff.textContent = p.priced && price !== null && open ? 'Még nem összevethető: ' + open + ' tétel árazatlan' : difference === null ? '—' : signed(difference) + ' · ' + percent(difference, price) + (p.closed ? ' · ' + p.closed + ' tétel kizárva' : '');
+      view.diff.className = 'num r2' + (difference === null || Math.round(difference) === 0 ? '' : difference > 0 ? ' up' : ' down');
+      phaseViews.get(pkg.id).count.textContent = round === 1 ? [p.count + ' tétel', p.closed ? p.closed + ' nincs a csomagárban' : '', p.clarify ? p.clarify + ' tisztázandó' : ''].filter(Boolean).join(' · ') : caption(p);
+    }
+    const phaseOut=id('phase-total'), totalOut=id('total');
+    phaseOut.replaceChildren(); totalOut.replaceChildren();
+    const share = bid.standardSharePct, factor = vatFactor(share);
+    const priceOf = key => bid.packages[key].netFt;
+    const missing = core.filter(key => priceOf(key) === null);
+    const packageTotal = missing.length === core.length ? null : core.reduce((sum, key) => sum + (priceOf(key) ?? 0), 0);
+    let direct, directCaption, partialNote;
+    if (round === 1) {
+      for (const pkg of packages) {
+        const price = priceOf(pkg.id), kind = bid.packages[pkg.id].kind, p = progress[pkg.id];
+        const flagged = [p.closed ? p.closed + ' tétel nincs benne' : '', p.clarify ? p.clarify + ' tisztázandó' : ''].filter(Boolean).join(' · ');
+        stat(phaseOut, pkg.id + ' · ' + phases[pkg.id], price, [price === null ? '' : kind ? kindChoices.get(kind) : 'Az ár jellege nincs jelölve.', flagged].filter(Boolean).join(' · '));
+      }
+      direct = packageTotal;
+      partialNote = packageTotal !== null && missing.length ? 'Részösszeg: ' + missing.join(', ') + ' csomag ára hiányzik.' : '';
+      directCaption = partialNote;
+    } else {
+      for (const [key, p] of Object.entries(progress)) {
+        const price = priceOf(key);
+        const parts = [caption(p) + (p.priced && !done(p) ? ' · részösszeg' : '')];
+        const open = p.count - p.priced - p.closed;
+        if (price !== null) parts.push('1. körös csomagár: ' + currency(price) + (!p.priced ? '' : open ? ', az eltérés a teljes beárazás után látszik' : ', eltérés: ' + signed(p.sum - price)));
+        stat(phaseOut, key + ' · ' + phases[key], p.priced ? p.sum : null, parts.join(' · '));
+      }
+      const all = {count:0, priced:0, sum:0, closed:0, clarify:0, deviate:0};
+      for (const key of core) for (const field of Object.keys(all)) all[field] += progress[key][field];
+      direct = all.priced ? all.sum : null;
+      partialNote = done(all) ? '' : 'Részösszeg: a nem árazott és a tisztázandó tételek nincsenek benne.';
+      directCaption = caption(all);
+      var openCore = all.count - all.priced - all.closed;
+    }
+    const model = bid.commercial.model, pct = bid.commercial.feePct;
+    applyModel(model);
+    const fee = model === 'lumpSum' ? 0 : model === 'percent' ? (direct !== null && pct !== null ? direct * pct / 100 : null) : bid.feeFt;
+    const net = direct === null && fee === null ? null : (direct ?? 0) + (fee ?? 0);
+    const vat = net !== null && factor !== null ? net * (factor - 1) : null;
+    const gross = vat === null ? null : net + vat;
+    stat(totalOut, (round === 1 ? 'Csomagárak (A–C), nettó' : 'Tételes munkák (A–C), nettó') + (model === 'lumpSum' ? ', díjjal' : ''), direct, directCaption);
+    if (model === 'lumpSum') stat(totalOut, 'Díj', null, 'Átalányár: a díj a csomagárakban van.', false, () => 'a csomagárakban');
+    else if (model === 'percent') stat(totalOut, 'Százalékos díj, nettó', fee, pct === null ? 'A díj százaléka még nincs megadva.' : 'A költség ' + qtyFormat.format(pct) + '%-a.');
+    else stat(totalOut,'Fix generáldíj, nettó',bid.feeFt,bid.feeFt === null ? 'Még nincs megadva.' : '');
+    stat(totalOut,'Összesen, nettó',net,partialNote,true);
+    stat(totalOut,'Áfa',vat,share === null ? 'A 27%-os áfájú rész megadása után számolódik.' : '');
+    stat(totalOut,'Összesen, bruttó',gross,partialNote,true);
+    if (round === 2 && packageTotal !== null && direct !== null) {
+      stat(totalOut, '1. körös csomagárak (A–C), nettó', packageTotal, missing.length ? missing.join(', ') + ' csomag ára hiányzik.' : '');
+      const comparable = !openCore && !missing.length;
+      stat(totalOut, 'Eltérés: tételes összeg és 1. körös ár', comparable ? direct - packageTotal : null, comparable ? percent(direct - packageTotal, packageTotal) : openCore ? 'Még nem összevethető: ' + openCore + ' tétel árazatlan vagy tisztázandó.' : 'Még nem összevethető: ' + missing.join(', ') + ' csomag 1. körös ára hiányzik.', false, signed);
+    }
+    const cap = bid.commercial.capGrossFt;
+    stat(totalOut, 'Bruttó árplafon (A–C)', cap, cap === null ? 'Még nincs megadva.' : gross === null ? '' : cap < gross ? 'Kevesebb, mint a bruttó végösszeg. Ellenőrizze.' : 'A bruttó végösszeg felett ' + currency(cap - gross) + '.');
+    const coreRisks = bid.risks.filter(risk => risk.pkg !== 'K'), kRisks = bid.risks.filter(risk => risk.pkg === 'K');
+    const open = coreRisks.filter(risk => risk.capFt === null).length;
+    const riskNet = coreRisks.reduce((sum, risk) => sum + (risk.capFt ?? 0), 0);
+    if (coreRisks.length) stat(totalOut, 'Kockázati tételek felső határa, nettó', riskNet, coreRisks.length + ' tétel' + (open ? ', ebből ' + open + ' felső határ nélkül' : ''));
+    if (cap !== null || coreRisks.length) {
+      const base = cap ?? gross;
+      const worst = open || base === null || factor === null ? null : base + riskNet * factor;
+      const why = open ? 'Nem számolható: ' + open + ' kockázati tételnek nincs felső határa.' : factor === null ? 'A 27%-os áfájú rész megadása után számolódik.' : (cap !== null ? 'Árplafon' : 'Bruttó végösszeg') + (coreRisks.length ? ' és a kockázati tételek felső határa, áfával.' : ', kockázati tétel nélkül.');
+      stat(totalOut, 'Legrosszabb eset, bruttó', worst, why, true);
+    }
+    const kPrice = round === 1 ? priceOf('K') : (progress.K.priced ? progress.K.sum : null);
+    if (kPrice !== null) {
+      const kRiskNet = kRisks.reduce((sum, risk) => sum + (risk.capFt ?? 0), 0);
+      const kCaption = round === 1 ? (bid.packages.K.kind ? kindChoices.get(bid.packages.K.kind) : '') : caption(progress.K) + (done(progress.K) ? '' : ' · részösszeg');
+      stat(totalOut, 'Kert és kerítés (K), külön kérhető, nettó', kPrice, [kCaption, kRisks.length ? 'kockázati tétel legfeljebb ' + currency(kRiskNet) : ''].filter(Boolean).join(' · '));
+      stat(totalOut, 'Bruttó árplafon a kerttel és kerítéssel (A–C + K)', bid.commercial.capAllGrossFt, bid.commercial.capAllGrossFt === null ? 'Még nincs megadva.' : '');
+    }
+    if (bid.proposals.length) {
+      const saving = bid.proposals.filter(item => item.effect === 'saving').reduce((sum, item) => sum + (item.amountFt ?? 0), 0);
+      const extra = bid.proposals.filter(item => item.effect === 'extra').reduce((sum, item) => sum + (item.amountFt ?? 0), 0);
+      const count = bid.proposals.length;
+      stat(totalOut, 'Javaslatok, megtakarítás, nettó', saving ? -saving : null, count + ' javaslat; az alapárban nincsenek benne, a megrendelő dönt róluk.', false, signed);
+      if (extra) stat(totalOut, 'Javaslatok, felár, nettó', extra, '', false, signed);
+    }
+    last = bid;
+    return bid;
+  }
+  function writeDraft() {
+    const fields = {};
+    for(const [key, field] of inputs) if (field.input.value !== '') fields[key] = field.input.value;
+    try {
+      localStorage.setItem(localKey,JSON.stringify({bidId,fields,baseFacade:last.baseFacade,round}));
+      id('autosave').textContent='Piszkozat mentve ebben a böngészőben. Másik eszközön a letöltött ajánlatfájlból folytathatja.';
+    } catch {
+      id('autosave').textContent='Ez a böngésző itt nem tárolja a piszkozatot. A mentéshez töltse le az ajánlatfájlt.';
+    }
+  }
+  function restoreDraft() {
+    try {
+      let saved = null;
+      for (const version of [scope.version, version3, version2, version1]) {
+        const raw = localStorage.getItem('lake-forest-tender:' + version);
+        if (raw) { saved = JSON.parse(raw); break; }
+      }
+      if(!saved || typeof saved.bidId !== 'string' || !/^[\w-]{1,100}$/.test(saved.bidId) || !saved.fields || typeof saved.fields !== 'object') return;
+      bidId=saved.bidId;
+      for (const [key,val] of Object.entries(saved.fields)) {
+        if(inputs.has(key) && typeof val==='string') inputs.get(key).input.value=val;
+      }
+      if(facadeViews.has(saved.baseFacade)) facadeViews.get(saved.baseFacade).radio.checked=true;
+      const hadLines = Object.keys(saved.fields).some(key => /^r\d\d-\d\d:(qty|materialFt|laborFt)$/.test(key));
+      const savedRound = saved.round === 1 || saved.round === 2 ? saved.round : hadLines ? 2 : 1;
+      setRound(Math.max(savedRound, scope.defaultRound === 2 ? 2 : 1));
+      id('autosave').textContent='Az ebben a böngészőben mentett piszkozat megnyitva.';
+    } catch { /* A session without local persistence can export files. */ }
+  }
+  function applyBid(bid) {
+    const isNum = (v,max) => v === null || typeof v === 'number' && Number.isFinite(v) && v >= 0 && v <= max;
+    const isText = (v,max) => typeof v === 'string' && v.length <= max;
+    const v1 = bid?.format === 'lake-forest-bid-v1' && bid?.version === version1;
+    const v2 = bid?.format === 'lake-forest-bid-v2' && bid?.version === version2;
+    const v3 = bid?.format === 'lake-forest-bid-v3' && (bid?.version === scope.version || bid?.version === version3);
+    const check = (items,ids,hasQty) => {
+      if (!Array.isArray(items) || items.length > ids.size) return false;
+      const seen = new Set();
+      for (const item of items) {
+        if (!item || !ids.has(item.id) || seen.has(item.id) || !isNum(item.materialFt,1e12) ||
+            !isNum(item.laborFt,1e12) || hasQty && !isNum(item.qty,1e8)) return false;
+        if ((v2 || v3) && hasQty && (!lineStatuses.has(item.status ?? '') || !isText(item.comment ?? '',2000))) return false;
+        seen.add(item.id);
+      }
+      return true;
+    };
+    const commercial = bid?.commercial;
+    const numberKeys = v2 ? {advancePct:100, capFt:1e12, phaseAFeeFt:1e12} : commercialNumbers;
+    const termsValid = v1 || commercial && commercial.terms &&
+      commercialText.every(key => isText(commercial[key] ?? '',10000)) &&
+      Object.entries(numberKeys).every(([key,max]) => isNum(commercial[key] ?? null,max)) &&
+      Object.keys(termLabels).every(key => termChoices.has(commercial.terms[key] ?? '')) &&
+      modelChoices.has(commercial.model ?? '');
+    const packagesValid = !v3 || bid.packages && typeof bid.packages === 'object' &&
+      packages.every(pkg => { const x = bid.packages[pkg.id]; return x && isNum(x.netFt ?? null,1e12) && kindChoices.has(x.kind ?? ''); });
+    const proposalsValid = !v3 || bid.proposals === undefined || Array.isArray(bid.proposals) && bid.proposals.length <= proposalCount &&
+      bid.proposals.every(item => item && riskPackages.has(item.pkg ?? '') && isText(item.what ?? '',300) && isText(item.why ?? '',300) && effectChoices.has(item.effect ?? '') && isNum(item.amountFt ?? null,1e12));
+    const risksValid = !v3 || Array.isArray(bid.risks) && bid.risks.length <= riskCount &&
+      bid.risks.every(risk => risk && riskPackages.has(risk.pkg ?? '') && isText(risk.text ?? '',500) && isText(risk.basis ?? '',300) && isNum(risk.capFt ?? null,1e12));
+    const supportedFacades = v1 ? new Set(['render','micro','wood','fiber']) : new Set(facadeViews.keys());
+    if ((!v1 && !v2 && !v3) || !termsValid || !packagesValid || !risksValid || !proposalsValid || typeof bid.bidId !== 'string' || !/^[\w-]{1,100}$/.test(bid.bidId)
+      || !isText(bid.company,160) || !bid.company.trim() || !isText(bid.notes,10000)
+      || !isNum(bid.feeFt,1e12) || !(v3 || isNum(bid.reservePct,100)) || !isNum(bid.standardSharePct,100)
+      || bid.baseFacade !== null && !supportedFacades.has(bid.baseFacade)
+      || !check(bid.lines,new Set(rowViews.keys()),true) || !check(bid.facades,supportedFacades,false))
+      throw Error('A fájl formátuma vagy a kiírás változata eltér. A jelenlegi kitöltés megmaradt.');
+    const filled=[...inputs.values()].some(field=>field.input.value.trim()) || last.baseFacade !== null;
+    if(filled && !confirm('Lecseréli a jelenlegi kitöltést a kiválasztott fájl adataira?')) return;
+    const set=(key,v)=>{inputs.get(key).input.value=v==null?'':String(v).replace('.',',');};
+    for(const field of inputs.values())field.input.value='';
+    bidId=bid.bidId;
+    id('company').value=bid.company; id('notes').value=bid.notes;
+    for(const key of ['feeFt','standardSharePct'])set(key,bid[key]);
+    for(const line of bid.lines)for(const key of ['qty','materialFt','laborFt'])set(line.id+':'+key,line[key]);
+    let note = '';
+    if(v2 || v3) {
+      for(const key of commercialText)id(key).value=commercial[key] ?? '';
+      for(const key of Object.keys(termLabels))inputs.get('term:'+key).input.value=commercial.terms[key] ?? '';
+      for(const line of bid.lines) {
+        inputs.get(line.id+':status').input.value=line.status || '';
+        inputs.get(line.id+':comment').input.value=line.comment || '';
+      }
+    }
+    if (v3) {
+      for(const key of Object.keys(commercialNumbers))set(key,commercial[key]);
+      inputs.get('model').input.value = commercial.model || '';
+      for (const pkg of packages) {
+        set('pkg:' + pkg.id + ':netFt', bid.packages[pkg.id].netFt);
+        inputs.get('pkg:' + pkg.id + ':kind').input.value = bid.packages[pkg.id].kind || '';
+      }
+      bid.risks.forEach((risk, index) => {
+        const n = index + 1;
+        inputs.get('risk' + n + ':pkg').input.value = risk.pkg || '';
+        inputs.get('risk' + n + ':text').input.value = risk.text || '';
+        inputs.get('risk' + n + ':basis').input.value = risk.basis || '';
+        set('risk' + n + ':capFt', risk.capFt);
+      });
+      (bid.proposals || []).forEach((item, index) => {
+        const n = index + 1;
+        inputs.get('prop' + n + ':pkg').input.value = item.pkg || '';
+        inputs.get('prop' + n + ':what').input.value = item.what || '';
+        inputs.get('prop' + n + ':why').input.value = item.why || '';
+        inputs.get('prop' + n + ':effect').input.value = item.effect || '';
+        set('prop' + n + ':amountFt', item.amountFt);
+      });
+    } else if (v2) {
+      set('advancePct', commercial.advancePct);
+      set('phaseAFeeFt', commercial.phaseAFeeFt);
+      if (commercial.capFt != null && bid.standardSharePct != null) set('capGrossFt', Math.round(commercial.capFt * vatFactor(bid.standardSharePct)));
+      else if (commercial.capFt != null) note = ' A korábbi fájl nettó maximális ára (' + currency(commercial.capFt) + ') a 27%-os rész nélkül nem váltható bruttóra: adja meg a bruttó árplafont.';
+    }
+    for(const option of bid.facades)for(const key of ['materialFt','laborFt'])set(option.id+':'+key,option[key]);
+    for(const [key,view] of facadeViews)view.radio.checked=key===bid.baseFacade;
+    const hadLines = bid.lines.some(line => line.qty !== null || line.materialFt !== null || line.laborFt !== null);
+    const fileRound = v3 ? (bid.round === 2 ? 2 : 1) : hadLines ? 2 : 1;
+    setRound(Math.max(fileRound, scope.defaultRound === 2 ? 2 : 1));
+    riskVisible = riskMin;
+    layoutRisks();
+    proposalVisible = proposalMin;
+    layoutProposals();
+    refresh(); writeDraft();
+    message((v1 ? 'A korábbi ajánlat adatai megnyíltak. Az új feltételek és a további homlokzatváltozatok még kitölthetők.' : v2 ? 'A korábbi változatú ajánlatfájl adatai megnyíltak. A csomagárak, az árplafon és a kockázati tételek még kitölthetők.' : 'Az ajánlatfájl adatai megnyíltak.') + note);
+  }
+  function saveFile(){
+    const bid=refresh();
+    const company=id('company');
+    if(!bid.company){message('A letölthető ajánlathoz adja meg a céget vagy a vállalkozó nevét.',true); company.focus();return;}
+    const invalid=document.querySelector('input[aria-invalid="true"]');
+    if(invalid){
+      const panel=invalid.closest('details');
+      if(panel)panel.open=true;
+      const section=invalid.closest('.phase-section');
+      if(section){setRound(2);selectPhase(section.id.slice(-1));}
+      const row=invalid.closest('tr');
+      if(row && row.hidden){row.hidden=false;}
+      message('A jelölt számmező hibás. Javítsa ki, vagy hagyja üresen a részleges ajánlathoz.',true);
+      invalid.focus();invalid.reportValidity();return;
+    }
+    const slug=bid.company.normalize('NFKD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9-]+/g,'-').replace(/^-+|-+$/g,'').slice(0,70)||'kivitelezo';
+    const url=URL.createObjectURL(new Blob([JSON.stringify(bid,null,2)],{type:'application/json'}));
+    const link=element('a');link.href=url;link.download='Lake-Forest-ajanlat-'+slug+'-'+round+'-kor.json';document.body.append(link);
+    link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+    message('Az ajánlatfájl letöltése elindult. A letöltött JSON-fájlt küldje vissza a megrendelőnek.');
+    writeDraft();
+  }
+  buildScope();setRound(round);restoreDraft();layoutRisks();layoutProposals();refresh();
+  document.addEventListener('input',()=>{refresh();writeDraft();message('');});
+  id('scope-toggle').addEventListener('click',()=>{scopeOpen=!scopeOpen;setRound(round);if(scopeOpen)id('phase-nav').querySelector('button')?.focus();});
+  id('round-nav').addEventListener('click',event=>{
+    const button=event.target.closest('button[data-round]');
+    if(!button)return;
+    setRound(Number(button.dataset.round));refresh();writeDraft();
+  });
+  id('add-proposal').addEventListener('click',()=>{
+    layoutProposals(true);
+    const row=proposalRows[proposalVisible-1];
+    const field=row && row.querySelector('select,input');
+    if(field)field.focus();
+  });
+  id('add-risk').addEventListener('click',()=>{
+    layoutRisks(true);
+    const row=riskRows[riskVisible-1];
+    const field=row && row.querySelector('select,input');
+    if(field)field.focus();
+  });
+  id('fill-plan').addEventListener('click',()=>{
+    let filled=0;
+    for(const row of scope.rows.filter(r=>packageOf(r)===active && r.qty !== null && ['', 'priced'].includes(inputs.get(r.id+':status').input.value))){
+      const field=inputs.get(row.id+':qty').input;
+      if(!field.value.trim()){field.value=String(row.qty).replace('.',',');filled++;}
+    }
+    refresh();writeDraft();message(filled?'A(z) '+active+' csomag '+filled+' üres vállalt mennyiségét kitöltöttük a kiírás szerint. Ellenőrizze a vállalható értékeket.':'Ebben a csomagban nincs átvehető kiírt mennyiség üres mezővel.');
+  });
+  id('clear-facade').addEventListener('click',()=>{for(const view of facadeViews.values())view.radio.checked=false;refresh();writeDraft();});
+  id('export').addEventListener('click',saveFile);
+  let collapsedPanels = [];
+  window.addEventListener('beforeprint', () => {
+    collapsedPanels = [...document.querySelectorAll('.commercial-panel:not([open])')];
+    for (const panel of collapsedPanels) panel.open = true;
+  });
+  window.addEventListener('afterprint', () => {
+    for (const panel of collapsedPanels) panel.open = false;
+    collapsedPanels = [];
+  });
+  id('print').addEventListener('click',()=>{refresh();window.print();});
+  id('restore').addEventListener('click',()=>id('file').click());
+  id('file').addEventListener('change',async e=>{
+    const file=e.target.files[0];if(!file)return;
+    try {if(file.size>2e6)throw Error('A kiválasztott fájl túl nagy. Válasszon egy korábban letöltött ajánlatfájlt.');applyBid(JSON.parse(await file.text()));}
+    catch(err){message(err instanceof SyntaxError?'A fájl nem olvasható JSON-ajánlatként.':err.message,true);}
+    finally{e.target.value='';}
+  });
+})();
+</script>
+</body></html>
